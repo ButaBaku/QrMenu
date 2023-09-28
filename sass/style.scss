@@ -1,0 +1,74 @@
+.logo-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .logo-box {
+    width: 27%;
+    padding: 3vh 5vh;
+    background-color: #030303;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
+    }
+  }
+}
+.row{
+    margin: 0;
+}
+.mehsul{
+    display: flex;
+    padding: 20px 4px;
+    justify-content: space-around;
+    border: 2px solid red;
+    color:brown;
+    background-color: rgb(214, 160, 141);
+
+}
+
+.foodName,.price{
+    font-weight: 700;
+}
+
+.menu-head {
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .head-box {
+    width: max-content;
+    padding: 3vh 10vh;
+    background-color: rgb(201, 10, 10);
+    color: wheat;
+    // font-family: "Lora", serif;
+    h2{
+        font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+    }
+    // clip-path: polygon(0 24%, 100% 24%, 78% 52%, 100% 76%, 0 76%, 24% 52%);
+    // clip-path: polygon(0 24%, 100% 24%, 85% 51%, 100% 76%, 0 76%, 15% 51%);
+
+    clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+    text-transform: uppercase;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  padding: 15vh 0;
+  .main-box {
+    width: 87%;
+    background-color: bisque;
+    padding: 15vh 0;
+    // height: 10vh;
+  }
+}
