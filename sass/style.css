@@ -48,6 +48,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .foodName,
 .price {
   font-weight: 700;
@@ -162,9 +166,20 @@
   transform: scaleX(-1);
 }
 
-#broccoli {
+#pepper {
   position: absolute;
-  right: 3%;
+  right: 0;
   width: 12%;
   top: 8%;
+  transform: scaleX(-1);
+}
+
+.menu-list {
+  position: relative;
+}
+.menu-list #garlic {
+  position: absolute;
+  right: -8%;
+  top: 40%;
+  width: 10%;
 }/*# sourceMappingURL=style.css.map */
