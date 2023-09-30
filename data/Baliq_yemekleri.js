@@ -3,13 +3,13 @@ const baliq_yemekleri = [
     id: 1,
     name: "Qızıl Balıq(Setkada)(200qr)",
     desc:"",
-    price: 18.0,
+    price: 18.00,
   },
   {
     id: 2,
     name: "Farel(Manqal/Tava)(350qr)",
     desc:"",
-    price: 15.0,
+    price: 15.00,
   },
   {
     id: 3,
@@ -21,13 +21,13 @@ const baliq_yemekleri = [
     id: 4,
     name: "Berj(Manqal/Tava)(350qr)",
     desc:"",
-    price: 25.0,...budu?
+    price: 25.00,
   },
   {
     id: 5,
     name: "Dorado(Manqal/Tava)(450qr)",
     desc:"",
-    price: 22.0,
+    price: 22.00,
   },
 ];
 
