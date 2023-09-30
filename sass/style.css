@@ -59,10 +59,15 @@ body {
 
 .menu-head {
   position: relative;
-  padding: 5vh 0;
+  padding: 10vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 720px) {
+  .menu-head {
+    padding: 5vh 0 !important;
+  }
 }
 .menu-head .head-box {
   width: -moz-max-content;
@@ -73,6 +78,9 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
           clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
   text-transform: uppercase;
+}
+.menu-head .head-box:hover {
+  background-color: pink;
 }
 .menu-head .head-box h2 {
   font-family: "Poppins", sans-serif;
@@ -120,10 +128,15 @@ body {
   background-color: bisque;
   padding: 15vh 0;
 }
+@media only screen and (max-width: 800px) {
+  .main-container .main-box {
+    padding: 5vh 0 !important;
+  }
+}
 
 .mehsul {
   width: 100%;
-  padding: 0 2vh;
+  padding: 0 1vh;
   margin: 2.5vh 0;
 }
 .mehsul .name-price {
@@ -143,7 +156,7 @@ body {
 }
 .mehsul .desc {
   color: rgb(74, 74, 74);
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Libre Franklin", sans-serif;
 }
 @media (max-width: 400px) {
@@ -151,10 +164,10 @@ body {
     font-size: 22px;
   }
   .mehsul .name-price span {
-    font-size: 15px;
+    font-size: 14px;
   }
   .mehsul .desc {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -174,12 +187,32 @@ body {
   transform: scaleX(-1);
 }
 
+.row {
+  margin: 0 !important;
+  --bs-gutter-y: 0rem !important;
+}
+
 .menu-list {
   position: relative;
+  --bs-gutter-y: 0rem !important;
+  margin-top: 0 !important;
 }
 .menu-list #garlic {
   position: absolute;
   right: -8%;
   top: 40%;
   width: 10%;
+}
+
+@media (max-width: 900px) {
+  #pepper {
+    right: 0;
+    width: 25%;
+    top: 11% !important;
+  }
+  #onion {
+    left: 0;
+    width: 16%;
+    top: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */

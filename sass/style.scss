@@ -48,15 +48,21 @@ body{
 
 .menu-head {
   position: relative;
-  padding: 5vh 0;
+  padding: 10vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 720px) {
+    padding: 5vh 0 !important;
+  }
   .head-box {
     width: max-content;
     padding: 3vh 10vh;
     background-color: rgb(201, 10, 10);
     color: wheat;
+    &:hover{
+      background-color: pink;
+    }
     // font-family: "Lora", serif;
     h2 {
       font-family: "Poppins", sans-serif;
@@ -105,13 +111,18 @@ body{
     // @media (max-width:400px) {
     //   width: 90%;
     // }
+    @media only screen and (max-width: 800px) {
+      padding:5vh 0 !important;
+    }
   }
 }
+
+
 
 .mehsul {
   width: 100%;
   // background-color: aliceblue;
-  padding: 0 2vh;
+  padding: 0 1vh;
   margin: 2.5vh 0;
   .name-price {
     display: flex;
@@ -130,20 +141,21 @@ body{
   }
   .desc {
     color: rgb(74, 74, 74);
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Libre Franklin", sans-serif;
   }
   @media (max-width: 400px) {
+    
     .name-price {
       p {
         font-size: 22px;
       }
       span {
-        font-size: 15px;
+        font-size: 14px;
       }
     }
     .desc {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 }
@@ -167,12 +179,38 @@ body{
   // transform: rotate(10deg);
 }
 
+.row{
+  margin:0 !important;
+  // margin-top: 0 !important;
+  --bs-gutter-y: 0rem !important;
+
+}
+
 .menu-list{
   position: relative;
+  --bs-gutter-y: 0rem !important;
+  // margin-top: var(--bs-gutter-y);
+  margin-top: 0 !important;
+  
   #garlic{
     position: absolute;
     right: -8%;
     top: 40%;
     width: 10%;
+    
+  }
+}
+
+@media (max-width: 900px) {
+
+  #pepper{
+    right: 0;
+    width: 25%;
+    top: 11% !important;
+  }
+  #onion{
+    left: 0;
+  width: 16%;
+  top: 10%;
   }
 }

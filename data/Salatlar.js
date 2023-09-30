@@ -1,0 +1,100 @@
+const salatlar = [
+    {
+        id:1,
+        name:"Çoban Salatı(220qr)",
+        desc:"Pomidor,xiyar,yaşıl bibər,soğan,cəfəri,limon sousu",
+        price:5.00,
+    },
+    {
+        id:2,
+        name:"Mimoza",
+        desc:"Kök,yumurta,kartof,file,qoz",
+        price:5.00,
+    },
+    {
+        id:3,
+        name:"Olivye - Paytaxt Salatı(250qr)",
+        desc:"Kartof,kök,yumurta,mayonez,yaşıl noxud,xiyar",
+        price:5.00,
+    },
+    {
+        id:4,
+        name:"Manqal Salatı(220qr)",
+        desc:"Pomidor,badımcan,rəngli bibər,sarımsaq",
+        price:5.00,
+    },
+    {
+        id:5,
+        name:"Xırt-Xırt Badımcan (250qr)",
+        desc:"Qızarmış çıtır badımcan,küncüt,rəndələnmiş parmezan pendiri,yaşıl soğan və xırt sous ilə",
+        price:5.00,
+    },
+    {
+        id:6,
+        name:"Döyməc(220qr)",
+        desc:"Pomidor,xiyar,yaşıl bibər,soğan,cəfəri,limon sousu",
+        price:5.00,
+    },
+    {
+        id:7,
+        name:"Gavurdağ(220qr)",
+        desc:"Pomidor,qırmızı soğan,yaşıl bibər,cəfəri,qoz ləpəsi,nar dənələri,narşərablı sous",
+        price:5.00,
+    },
+    {
+        id:8,
+        name:"Sezar(Toyuq file)(300qr)",
+        desc:"Toyuq aysberq,yarpaq parmezan pendiri,çeri pomidor,suxari,sezar sousu",
+        price:10.00,
+    },
+    {
+        id:9,
+        name:"Sezar(Krevetli)(250qr)",
+        desc:"Krevet,aysberq,yarpaq parmezan pendiri,çeri pomidor,suxari,sezar sousu",
+        price:15.00,
+    },
+    {
+        id:10,
+        name:"Barbekülü toyuq salatı(230qr)",
+        desc:"Aysberq,çeri pomidor,qarğıdalı,lobya,sous",
+        price:10.00,
+    },
+    {
+        id:11,
+        name:"Toyuq Salatı(220qr)",
+        desc:"Bibərlər,xiyar,kök,turşu,xiyar,yağ",
+        price:5.00,
+    },
+    
+    
+    
+]
+
+const salatlar_div = document.getElementById('salatlar');
+const salatlarBtn = document.querySelector(".salatlarBtn")
+var innerDiv = "";
+
+salatlar.map((item)=>{
+    innerDiv+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name}</p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+salatlarBtn.onclick=()=>{
+    if(salatlar_div.innerHTML==""){
+        salatlar_div.innerHTML = innerDiv;
+    }else{
+        salatlar_div.innerHTML="";  
+    }
+}
+
+salatlar_div.innerHTML = innerDiv;
