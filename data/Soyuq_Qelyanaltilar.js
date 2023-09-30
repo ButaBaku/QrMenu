@@ -109,10 +109,10 @@ const soyuq_qelyanaltilar = [
 
 const soyuq_qelyanaltilar_div = document.getElementById('soyuq-qelyanaltilar');
 const Soyuq_QelyanaltilarBtn = document.querySelector(".Soyuq_QelyanaltilarBtn")
-var innerDiv = "";
+var soyuq_qelyanaltilarinnerDiv = "";
 
 soyuq_qelyanaltilar.map((item)=>{
-    innerDiv+= `
+    soyuq_qelyanaltilarinnerDiv+= `
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
@@ -131,11 +131,11 @@ soyuq_qelyanaltilar.map((item)=>{
 
 Soyuq_QelyanaltilarBtn.onclick=()=>{
     if(soyuq_qelyanaltilar_div.innerHTML==""){
-        soyuq_qelyanaltilar_div.innerHTML = innerDiv;
+        soyuq_qelyanaltilar_div.innerHTML = soyuq_qelyanaltilarinnerDiv;
     }else{
         soyuq_qelyanaltilar_div.innerHTML="";  
     }
 }
 
 
-soyuq_qelyanaltilar_div.innerHTML = innerDiv;
+soyuq_qelyanaltilar_div.innerHTML = "";

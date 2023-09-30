@@ -53,13 +53,15 @@ body{
   justify-content: center;
   align-items: center;
   @media (max-width: 720px) {
-    padding: 5vh 0 !important;
+    padding: 3vh 0 !important;
   }
   .head-box {
     width: max-content;
     padding: 3vh 10vh;
-    background-color: rgb(201, 10, 10);
+    background-color: #860404;
+    // background-color: #121212;
     color: wheat;
+
     &:hover{
       background-color: pink;
     }
@@ -119,11 +121,36 @@ body{
 
 
 
+
+
 .mehsul {
   width: 100%;
   // background-color: aliceblue;
   padding: 0 1vh;
   margin: 2.5vh 0;
+
+  
+  .products{
+    padding-top: 14px;
+    // color:blue;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #860404;
+  }
+
+  .set-img{
+    // width: 180px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    width: 100%;
+    // height: 30vh;
+    height: 500px;
+
+    @media only screen and (max-width: 600px) {
+      height: 300px;
+    }
+
+  }
+  
   .name-price {
     display: flex;
     justify-content: space-between;
@@ -196,6 +223,14 @@ body{
   // margin-top: var(--bs-gutter-y);
   margin-top: 0 !important;
   
+  .avropaMetbexi{
+    padding: 20px 30px;
+    color: black;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  
   #garlic{
     position: absolute;
     right: -8%;
@@ -218,3 +253,5 @@ body{
   top: 10%;
   }
 }
+
+

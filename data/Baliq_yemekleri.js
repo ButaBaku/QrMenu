@@ -36,13 +36,67 @@ const baliq_yemekleri = [
   },
 ];
 
+const baliq_yemekleri_avropa = [
+  {
+      id: 1,
+      name: "Qızıl Balıq Özəl Sousda",
+      gram: "(400qr)",
+      desc: "",
+      price: 22.00,
+  },
+  {
+      id: 2,
+      name: "Forel Tərəvəzlərlə",
+      gram: "(350qr)",
+      desc: "",
+      price: 15.00,
+  },
+  {
+      id: 3,
+      name: "İspanaqlı Dorado balığı",
+      gram: "(360qr)",
+      desc: "",
+      price: 22.00,
+  },
+  {
+      id: 4,
+      name: "Tuna File Manqalda",
+      gram: "(280qr)",
+      desc: "",
+      price: 25.00,
+  },
+  
+  
+]
+
+
 
 const baliq_yemekleri_div = document.getElementById("baliq-yemekleri");
 const Baliq_yemekleriBtn = document.querySelector(".Baliq_yemekleriBtn");
-var innerDiv = "";
+var baliq_yemekleriinnerDiv = "";
 
 baliq_yemekleri.map((item) => {
-  innerDiv += `
+  baliq_yemekleriinnerDiv += `
+  <div class="col-12 col-md-6">
+                <div class="mehsul">
+                  <div class="name-price">
+                    <p>${item.name} <span class="gram">${item.gram}</span></p>
+                    <span>${item.price} AZN</span>
+                  </div>
+      
+                </div>
+              </div>
+    `;
+});
+
+
+const baliq_avropa = document.getElementById("baliq-yemekleri-avropa");
+
+var baliq_yemekleri_avropainnerDiv ='<p class="avropaMetbexi">Avropa mətbəxi</p>';
+
+
+baliq_yemekleri_avropa.map((item) => {
+  baliq_yemekleri_avropainnerDiv += `
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
@@ -56,11 +110,16 @@ baliq_yemekleri.map((item) => {
 });
 
 Baliq_yemekleriBtn.onclick=()=>{
-  if(baliq_yemekleri_div  .innerHTML==""){
-    baliq_yemekleri_div.innerHTML = innerDiv;
+  if(baliq_yemekleri_div.innerHTML==""){
+    baliq_yemekleri_div.innerHTML = baliq_yemekleriinnerDiv;
+    // baliq_avropa.innerHTML="baliq_yemekleri_avropainnerDiv";
+    baliq_avropa.innerHTML=baliq_yemekleri_avropainnerDiv;
+
   }else{
     baliq_yemekleri_div.innerHTML="";  
+    baliq_avropa.innerHTML="";
+
   }
 }
 
-baliq_yemekleri_div.innerHTML = innerDiv;
+baliq_yemekleri_div.innerHTML = "";

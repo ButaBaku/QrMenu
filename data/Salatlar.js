@@ -81,12 +81,73 @@ const salatlar = [
     
 ]
 
+
+const salatlar_avropa = [
+    {
+        id: 1,
+        name: "Sezar Krevetka",
+        gram: "(220qr)",
+        desc: "",
+        price: 15.00,
+    },
+    {
+        id: 2,
+        name: "Sezar Toyuq",
+        gram: "(220qr)",
+        desc: "",
+        price: 10.00,
+    },
+    {
+        id: 3,
+        name: "Qızıl Balıq Salatı",
+        gram: "(220qr)",
+        desc: "",
+        price: 14.00,
+    },
+    {
+        id: 4,
+        name: "Tuna Salatı",
+        gram: "(220qr)",
+        desc: "",
+        price: 12.00,
+    },
+    {
+        id: 5,
+        name: "Avakadolu Krevetka Salatı",
+        gram: "(220qr)",
+        desc: "",
+        price: 14.00,
+    },
+    {
+        id: 6,
+        name: "İsti Ət Salatı",
+        gram: "(220qr)",
+        desc: "",
+        price: 12.00,
+    },
+    {
+        id: 7,
+        name: "Tərəvəzli Miks Salatı",
+        gram: "(220qr)",
+        desc: "",
+        price: 10.00,
+    },
+    {
+        id: 8,
+        name: "Yunan Salatı",
+        gram: "(220qr)",
+        desc: "",
+        price: 8.00,
+    },
+        
+]
+
 const salatlar_div = document.getElementById('salatlar');
 const salatlarBtn = document.querySelector(".salatlarBtn")
-var innerDiv = "";
+var salatlarinnerDiv = "";
 
 salatlar.map((item)=>{
-    innerDiv+= `
+    salatlarinnerDiv+= `
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
@@ -100,12 +161,39 @@ salatlar.map((item)=>{
     `
 })
 
+
+
+const salatlar_avropa_div = document.getElementById("salatlar-avropa");
+
+var salatlar_avropainnerDiv ='<p class="avropaMetbexi">Avropa mətbəxi</p>';
+
+
+salatlar_avropa.map((item) => {
+    salatlar_avropainnerDiv += `
+  <div class="col-12 col-md-6">
+                <div class="mehsul">
+                  <div class="name-price">
+                    <p>${item.name} <span class="gram">${item.gram}</span></p>
+                    <span>${item.price} AZN</span>
+                  </div>
+      
+                </div>
+              </div>
+    `;
+});
+
+
+
+
 salatlarBtn.onclick=()=>{
-    if(salatlar_div.innerHTML==""){
-        salatlar_div.innerHTML = innerDiv;
+    if(salatlar_div.innerHTML===""){
+        salatlar_div.innerHTML = salatlarinnerDiv;
+        salatlar_avropa_div.innerHTML=salatlar_avropainnerDiv;
     }else{
         salatlar_div.innerHTML="";  
+        salatlar_avropa_div.innerHTML="";
     }
 }
 
-salatlar_div.innerHTML = innerDiv;
+salatlar_div.innerHTML="";
+// salatlar_div.innerHTML = innerDiv;

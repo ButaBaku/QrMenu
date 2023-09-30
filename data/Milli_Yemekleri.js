@@ -102,10 +102,10 @@ const milli_yemekleri = [
 
 const mill_div = document.getElementById("milli-yemekler");
 const btn_milli = document.querySelector(".Milli_Yemekler_Btn");
-var innerDiv = "";
+var milli_yemekleriinnerDiv = "";
 
 milli_yemekleri.map((item) => {
-  innerDiv += `
+    milli_yemekleriinnerDiv += `
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
@@ -121,10 +121,10 @@ milli_yemekleri.map((item) => {
 
 btn_milli.onclick=()=>{
   if(mill_div.innerHTML==""){
-    mill_div.innerHTML = innerDiv;
+    mill_div.innerHTML = milli_yemekleriinnerDiv;
   }else{
     mill_div.innerHTML="";  
   }
 }
 
-mill_div.innerHTML = innerDiv;
+mill_div.innerHTML = "";

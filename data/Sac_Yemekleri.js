@@ -27,10 +27,10 @@ const sac_yemekleri=[
 
 const sac_div = document.getElementById("sac-yemekleri");
 const btn_sac = document.querySelector(".Sac_yemekleriBtn");
-var innerDiv = "";
+var sacinnerDiv = "";
 
 sac_yemekleri.map((item) => {
-  innerDiv += `
+  sacinnerDiv += `
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
@@ -46,10 +46,10 @@ sac_yemekleri.map((item) => {
 
 btn_sac.onclick=()=>{
   if(sac_div.innerHTML==""){
-    sac_div.innerHTML = innerDiv;
+    sac_div.innerHTML = sacinnerDiv;
   }else{
     sac_div.innerHTML="";  
   }
 }
 
-sac_div.innerHTML = innerDiv;
+sac_div.innerHTML = "";

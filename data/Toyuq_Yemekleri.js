@@ -31,10 +31,10 @@ const toyuq_yemekleri = [
 
 const toyuq_yemekleri_div = document.getElementById("toyuq-yemekleri");
 const toyuq_yemekleriBtn = document.querySelector(".Toyuq_yemekleriBtn");
-var innerDiv = "";
+var toyuq_yemekleriinnerDiv = "";
 
 toyuq_yemekleri.map((item) => {
-  innerDiv += `
+  toyuq_yemekleriinnerDiv += `
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
@@ -49,10 +49,10 @@ toyuq_yemekleri.map((item) => {
 
 toyuq_yemekleriBtn.onclick=()=>{
   if(toyuq_yemekleri_div  .innerHTML==""){
-    toyuq_yemekleri_div.innerHTML = innerDiv;
+    toyuq_yemekleri_div.innerHTML = toyuq_yemekleriinnerDiv;
   }else{
     toyuq_yemekleri_div.innerHTML="";  
   }
 }
 
-toyuq_yemekleri_div.innerHTML = innerDiv;
+toyuq_yemekleri_div.innerHTML = "";

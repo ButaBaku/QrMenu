@@ -256,10 +256,10 @@ const tendir_yemekler=[
 
 const tendir_div = document.getElementById("tendir-yemekler");
 const btn_tendir = document.querySelector(".Tendir_Yemekleri_Btn");
-var innerDiv = "";
+var tendir_yemeklerinnerDiv = "";
 
 tendir_yemekler.map((item) => {
-  innerDiv += `
+    tendir_yemeklerinnerDiv += `
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
@@ -275,10 +275,10 @@ tendir_yemekler.map((item) => {
 
 btn_tendir.onclick=()=>{
   if(tendir_div.innerHTML==""){
-    tendir_div.innerHTML = innerDiv;
+    tendir_div.innerHTML = tendir_yemeklerinnerDiv;
   }else{
     tendir_div.innerHTML="";  
   }
 }
 
-tendir_div.innerHTML = innerDiv;
+tendir_div.innerHTML = "";
