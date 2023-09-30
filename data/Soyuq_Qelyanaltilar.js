@@ -2,90 +2,105 @@ const soyuq_qelyanaltilar = [
     {
         id:1,
         name:"Tər Pomidor, Xiyar",
+        gram: "",
         desc:"1 ədəd pomidor, 1 ədəd xiyar - 1 porsiya",
         price:1.50,
     },
     {
         id:2,
         name:"Göyərti",
+        gram: "",
         desc:"Qarışıq",
         price:2.00,
     },
     {
         id:3,
-        name:"Ağ Pendir(120qr)",
+        name:"Ağ Pendir",
+        gram: "(120qr)",
         desc:"",
         price:5.00,
     },
     {
         id:4,
-        name:"Motal Pendir(350qr)",
+        name:"Motal Pendir",
+        gram: "(350qr)",
         desc:"",
         price:6.00,
     },
     {
         id:5,
         name:"Pendir Assorti(Xarici)",
+        gram: "",
         desc:"",
         price:16.00,
     },
     {
         id:6,
-        name:"Acika(150qr)",
+        name:"Acika",
+        gram: "(150qr)",
         desc:"",
         price:3.00,
     },
     {
         id:7,
-        name:"Haydari(150qr)",
+        name:"Haydari",
+        gram: "(150qr)",
         desc:"",
         price:3.00,
     },
     {
         id:8,
-        name:"Acılı Əzmə(150qr)",
+        name:"Acılı Əzmə",
+        gram: "(150qr)",
         desc:"",
         price:5.00,
     },
     {
         id:9,
-        name:"Zeytun Assorti(160qr)",
+        name:"Zeytun Assorti",
+        gram: "(160qr)",
         desc:"",
         price:5.00,
     },
     {
         id:10,
-        name:"Pərpətöyün(180qr)",
+        name:"Pərpətöyün",
+        gram: "(180qr)",
         desc:"",
         price:4.00,
     },
     {
         id:11,
-        name:"Turşu Assorti(250qr)",
+        name:"Turşu Assorti",
+        gram: "(250qr)",
         desc:"",
         price:5.00,
     },
     {
         id:12,
-        name:"Badımcan Ruleti(180qr)",
+        name:"Badımcan Ruleti",
+        gram: "(180qr)",
         desc:"",
         price:5.00,
     },
     {
         id:13,
-        name:"Ət Assorti(300qr)",
+        name:"Ət Assorti",
+        gram: "(300qr)",
         desc:"",
         price:15.00,
     },
     {
         id:14,
-        name:"Sobada Toyuq(600qr)",
+        name:"Sobada Toyuq",
+        gram: "(600qr)",
         desc:"",
         price:15.00,
     },
     {
         id:15,
-        name:"Soyutma Toyuq(Kənd)(500qr)",
+        name:"Soyutma Toyuq(Kənd)",
+        gram: "(500qr)",
         desc:"",
         price:15.00,
     },
@@ -101,7 +116,7 @@ soyuq_qelyanaltilar.map((item)=>{
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
-        <p>${item.name}</p>
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
         <span>${item.price} AZN</span>
       </div>
       <div class="desc">

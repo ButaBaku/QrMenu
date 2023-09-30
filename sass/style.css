@@ -151,6 +151,10 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 27px;
 }
+.mehsul .name-price p .gram {
+  color: #5f5f5f !important;
+  font-size: 18px;
+}
 .mehsul .name-price span {
   font-size: 20px;
 }

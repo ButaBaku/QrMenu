@@ -2,217 +2,283 @@ const tendir_yemekler=[
     {
         id:1,
         name:"Quzu Səbət(Şoulu)",
+        gram: "",
         desc:"",
         price:70.00,
     },
     {
         id:2,
         name:"Təndirdə Quzu Qolu(Ləvəngili/Sadə)",
+        gram: "",
         desc:"",
         price:45.00,
     },
     {
         id:3,
         name:"Təndirdə Quzu Budu",
+        gram: "",
         desc:"",
         price:55.00,
     },
     {
         id:4,
         name:"Təndirdə Toyuq(Ləvəngili/Sadə)",
+        gram: "",
         desc:"",
-        price:25.00 / 15.00,
+        price:"25.00 / 15.00",
     },
     {
         id:5,
         name:"Təndirdə Bütöv Quzu(Ləvəngili/Düyü ilə)",
+        gram: "",
         desc:"öncədən rezerv ilə",
         price:"",
     },
     {
         id:6,
-        name:"Adana Kabab(porsiya)(200qr)",
+        name:"Adana Kabab(porsiya)",
+        gram: "(200qr)",
         desc:"",
         price:12.00,
     },
     {
         id:7,
-        name:"Adana(0,5 metr)(400qr)",
+        name:"Adana(0,5 metr)",
+        gram: "(400qr)",
         desc:"",
         price:35.00,
     },
     {
         id:8,
-        name:"Adana(1 metr)(800qr)",
+        name:"Adana(1 metr)",
+        gram: "(800qr)",
         desc:"",
         price:70.00,
     },
     {
         id:9,
-        name:"Adana(1 metr super)",
+        name:"Adana",
+        gram: "(1 metr super)",
         desc:"",
         price:120.00,
     },
     {
         id:10,
-        name:"Döymə(200qr)",
+        name:"Döymə",
+        gram: "(200qr)",
         desc:"",
         price:10.00,
     },
     {
         id:11,
-        name:"Sarma Beyti(200qr)",
+        name:"Sarma Beyti",
+        gram: "(200qr)",
         desc:"",
         price:12.00,
     },
     {
         id:12,
-        name:"Lülə Kabab(200qr)",
+        name:"Lülə Kabab",
+        gram: "(200qr)",
         desc:"",
         price:8.00,
     },
     {
         id:13,
-        name:"Tikə Kabab(200qr)",
+        name:"Tikə Kabab",
+        gram: "(200qr)",
         desc:"",
         price:8.00,
     },
     {
         id:14,
-        name:"Quzu Antrikotu(200qr)",
+        name:"Quzu Antrikotu",
+        gram: "(200qr)",
         desc:"",
         price:9.00,
     },
     {
         id:15,
-        name:"Dana Basdırma(200qr)",
+        name:"Dana Basdırma",
+        gram: "(200qr)",
         desc:"",
         price:10.00,
     },
     {
         id:16,
-        name:"Quzu Basdırma(200qr)",
+        name:"Quzu Basdırma",
+        gram: "(200qr)",
         desc:"",
         price:10.00,
     },
     {
         id:17,
-        name:"Maça Kababı(300qr)",
+        name:"Maça Kababı",
+        gram: "(300qr)",
         desc:"",
         price:10.00,
     },
     {
         id:18,
         name:"Semiçka Kababı",
+        gram: "",
         desc:"",
         price:8.00,
     },
     {
         id:19,
-        name:"Xan Kababı(200qr)",
+        name:"Xan Kababı",
+        gram: "(200qr)",
         desc:"",
         price:8.00,
     },
     {
         id:20,
-        name:"İçalat Kababı(200qr)",
+        name:"İçalat Kababı",
+        gram: "(200qr)",
         desc:"",
         price:6.00,
     },
     {
         id:21,
-        name:"Quyruq Kababı(200qr)",
+        name:"Quyruq Kababı",
+        gram: "(200qr)",
         desc:"",
         price:9.00,
     },
     {
         id:22,
         name:"Quzu Çöp-Şiş",
+        gram: "",
         desc:"",
         price:11.00,
     },
     {
         id:23,
-        name:"Kartof-Quyruq(200qr)",
+        name:"Kartof-Quyruq",
+        gram: "(200qr)",
         desc:"",
         price:6.00,
     },
     {
         id:24,
         name:"Şapalaq",
+        gram: "",
         desc:"",
         price:16.00,
     },
     {
         id:25,
         name:"Manqalda Dana Dili",
+        gram: "",
         desc:"",
         price:9.00,
     },
     {
         id:26,
-        name:"Koroğlu Kababı(200qr)",
+        name:"Koroğlu Kababı",
+        gram: "(200qr)",
         desc:"",
         price:15.00,
     },
     {
         id:27,
-        name:"Hinduşka Kababı(0,5 yarısı)",
+        name:"Hinduşka Kababı",
+        gram: "(0,5 yarısı)",
         desc:"",
         price:35.00,
     },
     {
         id:28,
-        name:"Çopla Setkada(turşulu/turşusuz)",
+        name:"Çopla Setkada",
+        gram: "(turşulu/turşusuz)",
         desc:"",
         price:15.00,
     },
     {
         id:29,
-        name:"Toyuq Kababı(200qr)",
+        name:"Toyuq Kababı",
+        gram: "(200qr)",
         desc:"",
         price:6.00,
     },
     {
         id:30,
-        name:"Toyuq Lüləsi(200qr)",
+        name:"Toyuq Lüləsi",
+        gram: "(200qr)",
         desc:"",
         price:6.00,
     },
     {
         id:31,
-        name:"Toyuq Qanad(200qr)",
+        name:"Toyuq Qanad",
+        gram: "(200qr)",
         desc:"",
         price:6.00,
     },
     {
         id:32,
         name:"Nərə Balığı Kababı",
+        gram: "",
         desc:"",
         price:"",
     },
     {
         id:33,
-        name:"Tərəvəz Kababı(1 ədəd)",
+        name:"Tərəvəz Kababı",
+        gram: "(1 ədəd)",
         desc:"",
         price:1.00,
     },
     {
         id:34,
-        name:"Kartof Külləmə(1 ədəd)",
+        name:"Kartof Külləmə",
+        gram: "(1 ədəd)",
         desc:"",
         price:0.50,
     },
     {
         id:35,
-        name:"Kartof Lüləsi(200qr)",
+        name:"Kartof Lüləsi",
+        gram: "(200qr)",
         desc:"",
         price:3.00,
     },
     {
         id:36,
-        name:"Can Əti Çöpdə(200qr)",
+        name:"Can Əti Çöpdə",
+        gram: "(200qr)",
         desc:"",
         price:12.00,
     },
 ]
+
+
+const tendir_div = document.getElementById("tendir-yemekler");
+const btn_tendir = document.querySelector(".Tendir_Yemekleri_Btn");
+var innerDiv = "";
+
+tendir_yemekler.map((item) => {
+  innerDiv += `
+  <div class="col-12 col-md-6">
+                <div class="mehsul">
+                  <div class="name-price">
+                    <p>${item.name} <span class="gram">${item.gram}</span></p>
+                    <span>${item.price} AZN</span>
+                  </div>
+
+                  <span class="desc">${item.desc}</span>
+                </div>
+              </div>
+    `;
+});
+
+btn_tendir.onclick=()=>{
+  if(tendir_div.innerHTML==""){
+    tendir_div.innerHTML = innerDiv;
+  }else{
+    tendir_div.innerHTML="";  
+  }
+}
+
+tendir_div.innerHTML = innerDiv;

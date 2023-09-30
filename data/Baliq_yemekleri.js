@@ -1,33 +1,38 @@
 const baliq_yemekleri = [
   {
     id: 1,
-    name: "Qızıl Balıq(Setkada)(200qr)",
+    name: "Qızıl Balıq(Setkada)",
+    gram: "(200qr)",
     desc:"",
-    price: 18.00,
+    price: 18.0,
   },
   {
     id: 2,
-    name: "Farel(Manqal/Tava)(350qr)",
+    name: "Farel(Manqal/Tava)",
+    gram: "(350qr)",
     desc:"",
-    price: 15.00,
+    price: 15.0,
   },
   {
     id: 3,
-    name: "Kütüm(Manqal/Tava)(500qr)",
+    name: "Kütüm(Manqal/Tava)",
+    gram: "(500qr)",
     desc:"",
     price: "25.00 / 35.00",
   },
   {
     id: 4,
-    name: "Berj(Manqal/Tava)(350qr)",
+    name: "Berj(Manqal/Tava)",
+    gram: "(350qr)",
     desc:"",
-    price: 25.00,
+    price: 25.0,
   },
   {
     id: 5,
-    name: "Dorado(Manqal/Tava)(450qr)",
+    name: "Dorado(Manqal/Tava)",
+    gram: "(450qr)",
     desc:"",
-    price: 22.00,
+    price: 22.0,
   },
 ];
 
@@ -41,7 +46,7 @@ baliq_yemekleri.map((item) => {
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
-                    <p>${item.name}</p>
+                    <p>${item.name} <span class="gram">${item.gram}</span></p>
                     <span>${item.price} AZN</span>
                   </div>
       
