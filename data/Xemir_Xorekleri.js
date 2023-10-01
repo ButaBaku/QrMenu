@@ -63,3 +63,32 @@ const xemir_xorekleri =[
         price: 10.00,
     },
 ]
+
+const xemir_xorekleri_div = document.getElementById('xemir-yemekler');
+const xemir_xorekleri_btn = document.querySelector(".xemir_yemekler_Btn")
+var pizzalar_inner = "";
+
+xemir_xorekleri.map((item)=>{
+    pizzalar_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+xemir_xorekleri_btn.onclick=()=>{
+    if(xemir_xorekleri_div.innerHTML==""){
+        xemir_xorekleri_div.innerHTML = pizzalar_inner;
+    }else{
+        xemir_xorekleri_div.innerHTML="";  
+    }
+}
+
+xemir_xorekleri_div.innerHTML = "";

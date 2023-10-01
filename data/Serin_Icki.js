@@ -141,7 +141,34 @@ const serin_icki = [
         gram: "(0,33)",
         desc: "",
         price: 10.00,
-    },
-
-    
+    },   
 ]
+
+const serin_icki_div = document.getElementById('serin-ickiler');
+const serin_icki_btn = document.querySelector(".serin_icki_Btn")
+var serin_icki_inner = "";
+
+serin_icki.map((item)=>{
+    serin_icki_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+serin_icki_btn.onclick=()=>{
+    if(serin_icki_div.innerHTML==""){
+        serin_icki_div.innerHTML = serin_icki_inner;
+    }else{
+        serin_icki_div.innerHTML="";  
+    }
+}
+
+serin_icki_div.innerHTML = "";

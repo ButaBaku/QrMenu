@@ -67,10 +67,39 @@ const usaq_yemekleri = [
     {
         id: 9,
         name: "Sendviç Toyuq",
-        gram: "200 qr",
+        gram: "(200 qr)",
         desc: "",
         price: 6.00
     },
     
     
 ]
+
+const usaq_menyusu_div = document.getElementById('usaq-menyusu');
+const usaq_menyusu_btn = document.querySelector(".usaq_menyusu_Btn")
+var usaq_menyusu_inner = "";
+
+usaq_yemekleri.map((item)=>{
+    usaq_menyusu_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+usaq_menyusu_btn.onclick=()=>{
+    if(usaq_menyusu_div.innerHTML==""){
+        usaq_menyusu_div.innerHTML = usaq_menyusu_inner;
+    }else{
+        usaq_menyusu_div.innerHTML="";  
+    }
+}
+
+usaq_menyusu_div.innerHTML = "";

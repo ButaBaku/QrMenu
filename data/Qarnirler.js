@@ -41,4 +41,40 @@ const qarnirler = [
         desc: "",
         price: 4.00,
     },
+    {
+        id: 7,
+        name: "Alma dilim",
+        gram: "(150qr)",
+        desc: "",
+        price: 4.00,
+    },
 ]
+
+const qarnirler_div = document.getElementById('qarnirler');
+const qarnirler_btn = document.querySelector(".qarnirler_Btn")
+var qarnirler_inner = "";
+
+qarnirler.map((item)=>{
+    qarnirler_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+qarnirler_btn.onclick=()=>{
+    if(qarnirler_div.innerHTML==""){
+        qarnirler_div.innerHTML = qarnirler_inner;
+    }else{
+        qarnirler_div.innerHTML="";  
+    }
+}
+
+qarnirler_div.innerHTML = "";

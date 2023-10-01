@@ -106,3 +106,33 @@ const desertler = [
     
 
 ]
+
+
+const desertler_div = document.getElementById('desertler');
+const desertler_btn = document.querySelector(".desertler_Btn")
+var desertler_inner = "";
+
+desertler.map((item)=>{
+    desertler_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+desertler_btn.onclick=()=>{
+    if(desertler_div.innerHTML==""){
+        desertler_div.innerHTML = desertler_inner;
+    }else{
+        desertler_div.innerHTML="";  
+    }
+}
+
+desertler_div.innerHTML = "";

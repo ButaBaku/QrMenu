@@ -43,3 +43,32 @@ const sendvic = [
     },
     
 ]
+
+const sendvic_div = document.getElementById('sendvic');
+const sendvic_btn = document.querySelector(".sendvic_Btn")
+var sendvic_inner = "";
+
+sendvic.map((item)=>{
+    sendvic_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+sendvic_btn.onclick=()=>{
+    if(sendvic_div.innerHTML==""){
+        sendvic_div.innerHTML = sendvic_inner;
+    }else{
+        sendvic_div.innerHTML="";  
+    }
+}
+
+sendvic_div.innerHTML = "";

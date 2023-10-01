@@ -114,6 +114,12 @@ body {
   top: 67%;
   width: 13%;
 }
+@media (max-width: 560px) {
+  #tomato {
+    width: 20%;
+    z-index: 2;
+  }
+}
 
 .main-container {
   display: flex;
@@ -190,6 +196,20 @@ body {
     font-size: 12px;
   }
 }
+@media (max-width: 350px) {
+  .mehsul .name-price p {
+    font-size: 18px;
+  }
+  .mehsul .name-price p .gram {
+    font-size: 9px;
+  }
+  .mehsul .name-price span {
+    font-size: 14px;
+  }
+  .mehsul .desc {
+    font-size: 12px;
+  }
+}
 
 #onion {
   position: absolute;
@@ -212,22 +232,40 @@ body {
   --bs-gutter-y: 0rem !important;
 }
 
+.avropaMetbexi {
+  margin: 4vh 0;
+  color: black;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+
+.country-name {
+  margin: 4vh 0;
+  color: #3a0767;
+  font-weight: bold;
+  font-family: "Poppins";
+  z-index: 200;
+}
+
+.city-name {
+  margin: 2vh 0;
+  color: #030303;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
 .menu-list {
   position: relative;
   --bs-gutter-y: 0rem !important;
   margin-top: 0 !important;
 }
-.menu-list .avropaMetbexi {
-  padding: 20px 30px;
-  color: black;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
 .menu-list #garlic {
   position: absolute;
-  right: -8%;
+  right: -5%;
   top: 40%;
+  z-index: 3;
   width: 10%;
 }
 
@@ -241,5 +279,61 @@ body {
     left: 0;
     width: 16%;
     top: 10%;
+  }
+}
+#wine-glass {
+  position: absolute;
+  top: 0%;
+  width: 20%;
+  left: -13%;
+  z-index: 0;
+  rotate: -25deg;
+}
+@media (max-width: 600px) {
+  #wine-glass {
+    width: 20%;
+  }
+}
+
+#white-wine-img {
+  position: absolute;
+  top: 0%;
+  width: 9%;
+  right: -4%;
+  z-index: 1;
+  rotate: -15deg;
+}
+@media (max-width: 600px) {
+  #white-wine-img {
+    width: 8%;
+  }
+}
+@media (min-width: 896px) {
+  #white-wine-img {
+    width: 4%;
+  }
+}
+
+#cake {
+  position: absolute;
+  top: 0%;
+  transform: translateY(-10vh);
+  width: 8%;
+  right: -4%;
+  z-index: 1;
+}
+@media (max-width: 600px) {
+  #cake {
+    width: 10%;
+  }
+}
+@media (min-width: 896px) {
+  #cake {
+    width: 5%;
+  }
+}
+@media (max-width: 450px) {
+  #cake {
+    width: 18%;
   }
 }/*# sourceMappingURL=style.css.map */

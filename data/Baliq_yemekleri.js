@@ -92,7 +92,7 @@ baliq_yemekleri.map((item) => {
 
 const baliq_avropa = document.getElementById("baliq-yemekleri-avropa");
 
-var baliq_yemekleri_avropainnerDiv ='<p class="avropaMetbexi">Avropa mətbəxi</p>';
+var baliq_yemekleri_avropainnerDiv ='<h2 class="avropaMetbexi">Avropa mətbəxi</h2>';
 
 
 baliq_yemekleri_avropa.map((item) => {

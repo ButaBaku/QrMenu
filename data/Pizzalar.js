@@ -64,3 +64,33 @@ const pizzalar = [
     },
    
 ]
+
+
+const pizzalar_div = document.getElementById('pizzalar');
+const pizzalar_btn = document.querySelector(".pizzalar_Btn")
+var pizzalar_inner = "";
+
+pizzalar.map((item)=>{
+    pizzalar_inner+= `
+    <div class="col-12 col-md-6">
+    <div class="mehsul">
+      <div class="name-price">
+        <p>${item.name} <span class="gram">${item.gram}</span></p>
+        <span>${item.price} AZN</span>
+        </div>
+        <div class="desc">${item.desc}</div>
+
+    </div>
+  </div>
+    `
+})
+
+pizzalar_btn.onclick=()=>{
+    if(pizzalar_div.innerHTML==""){
+        pizzalar_div.innerHTML = pizzalar_inner;
+    }else{
+        pizzalar_div.innerHTML="";  
+    }
+}
+
+pizzalar_div.innerHTML = "";
