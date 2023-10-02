@@ -3,30 +3,35 @@ const champagne = [
       id: 1,
       name: "Moet Chandon",
       desc:"",
+      gram: "",
       price: 255.00,
     },
     {
       id: 2,
       name: "Moet Rose",
       desc:"",
+      gram: "",
       price: 275.00,
     },
     {
       id: 3,
       name: "Veuve Clicquot",
       desc:"",
+      gram: "",
       price: 265.00,
     },
     {
       id: 4,
       name: "Dom Perignon",
       desc:"",
+      gram: "",
       price: 960.00,
     },
     {
         id: 5,
         name: "Louis Roederer Crystal",
         desc:"",
+        gram: "",
         price: 1550.00,
       },
   ];
@@ -41,8 +46,8 @@ const champagne = [
     <div class="col-12 col-md-6">
                   <div class="mehsul">
                     <div class="name-price">
-                      <p>${item.name}</p>
-                      <span>${item.price} AZN</span>
+                      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+      <span class="${func_price(item.price)}">${item.price} AZN</span>
                     </div>
         
                   </div>

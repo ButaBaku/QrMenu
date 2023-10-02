@@ -3,18 +3,21 @@ const prosecco = [
       id: 1,
       name: "Zonin",
       desc:"",
+      gram: "",
       price: "10.00 / 59.00"
     },
     {
       id: 2,
       name: "Piccini Ex.Dry",
       desc:"",
+      gram: "",
       price: 79.00,
     },
     {
       id: 3,
       name: "Piccini Rose",
       desc:"",
+      gram: "",
       price: 69.00,
     },
   ];
@@ -29,8 +32,8 @@ const prosecco = [
     <div class="col-12 col-md-6">
                   <div class="mehsul">
                     <div class="name-price">
-                      <p>${item.name}</p>
-                      <span>${item.price} AZN</span>
+                    <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+                    <span class="${func_price(item.price)}">${item.price} AZN</span>
                     </div>
         
                   </div>

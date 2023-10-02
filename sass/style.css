@@ -52,6 +52,35 @@ body {
   overflow-x: hidden !important;
 }
 
+.servis-haqqi-div {
+  padding: 2vh 3px 0 3px;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 20px;
+  position: fixed;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #030303;
+  color: #860404;
+  z-index: 100;
+}
+.servis-haqqi-div span {
+  margin: 5px 0;
+}
+.servis-haqqi-div p {
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 2px;
+  font-family: "EB Garamond", serif;
+}
+.servis-haqqi-div .end-i {
+  margin-left: 1px;
+}
+
 .foodName,
 .price {
   font-weight: 700;
@@ -140,6 +169,13 @@ body {
   }
 }
 
+.desc {
+  width: 80% !important;
+  color: rgb(74, 74, 74);
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
 .mehsul {
   width: 100%;
   padding: 0 1vh;
@@ -180,14 +216,9 @@ body {
 .mehsul .name-price span {
   font-size: 20px;
 }
-.mehsul .desc {
-  color: rgb(74, 74, 74);
-  font-size: 16px;
-  font-family: "Libre Franklin", sans-serif;
-}
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .mehsul .name-price p {
-    font-size: 22px;
+    font-size: 18px;
   }
   .mehsul .name-price span {
     font-size: 14px;
@@ -204,10 +235,44 @@ body {
     font-size: 9px;
   }
   .mehsul .name-price span {
-    font-size: 14px;
+    font-size: 15px;
   }
   .mehsul .desc {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .long-word {
+    font-size: 14px !important;
+  }
+  .long-word .gram {
+    font-size: 10px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1060px) {
+  .long-word {
+    font-size: 18px !important;
+  }
+  .long-word .gram {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .long-price {
+    font-size: 10px !important;
+  }
+  .long-price .gram {
+    font-size: 10px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1060px) {
+  .long-price {
+    font-size: 18px !important;
+  }
+  .long-price .gram {
+    font-size: 13px !important;
   }
 }
 
@@ -260,13 +325,6 @@ body {
   position: relative;
   --bs-gutter-y: 0rem !important;
   margin-top: 0 !important;
-}
-.menu-list #garlic {
-  position: absolute;
-  right: -5%;
-  top: 40%;
-  z-index: 3;
-  width: 10%;
 }
 
 @media (max-width: 900px) {

@@ -32,7 +32,7 @@ const baliq_yemekleri = [
     name: "Dorado(Manqal/Tava)",
     gram: "(450qr)",
     desc:"",
-    price: 22.0,
+    price: 25.0,
   },
 ];
 
@@ -71,6 +71,8 @@ const baliq_yemekleri_avropa = [
 
 
 
+
+
 const baliq_yemekleri_div = document.getElementById("baliq-yemekleri");
 const Baliq_yemekleriBtn = document.querySelector(".Baliq_yemekleriBtn");
 var baliq_yemekleriinnerDiv = "";
@@ -80,8 +82,8 @@ baliq_yemekleri.map((item) => {
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
-                    <p>${item.name} <span class="gram">${item.gram}</span></p>
-                    <span>${item.price} AZN</span>
+                  <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+                    <span class="${func_price(item.price)}">${item.price} AZN</span>
                   </div>
       
                 </div>

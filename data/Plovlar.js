@@ -50,8 +50,8 @@ plovlar.map((item)=>{
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
-        <p>${item.name} <span class="gram">${item.gram}</span></p>
-        <span>${item.price} AZN</span>
+      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+      <span class="${func_price(item.price)}">${item.price} AZN</span>
         </div>
         <div class="desc">${item.desc}</div>
 

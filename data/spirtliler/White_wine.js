@@ -8,24 +8,28 @@ const white_whine = [
                 id:1,
                 name:"Savalan Chardonnay",
                 desc:"",
+                gram: "",
                 price:"7.00 / 32.00",
             },
             {
                 id:2,
                 name:"Savalan Viogner",
                 desc:"",
+                gram: "",
                 price:32.00,
             },
             {
                 id:3,
                 name:"Meysəri Sədəf",
                 desc:"",
+                gram: "",
                 price:48.00,
             },
             {
                 id:4,
                 name:"Az-Granata Bayanshiray",
                 desc:"",
+                gram: "",
                 price:"6.00 / 35.00",
             },
         ],
@@ -35,18 +39,21 @@ const white_whine = [
                 id:1,
                 name:"Sarafin Chardonnay",
                 desc:"",
+                gram: "",
                 price:98.00,
             },
             {
                 id:2,
                 name:"Sarafin Sauvignon Blanc",
                 desc:"",
+                gram: "",
                 price:98.00,
             },
             {
                 id:3,
                 name:"Kav Narince",
                 desc:"",
+                gram: "",
                 price:65.00,
             },
         ],
@@ -61,12 +68,14 @@ const white_whine = [
                             id:1,
                             name:"Maison Castel Chardonnay",
                             desc:"",
+                            gram: "",
                             price:55.00,
                         },
                         {
                             id:2,
                             name:"Maison Castel Sauvignon Blanc",
                             desc:"",
+                            gram: "",
                             price:55.00,
                         },
                     ],
@@ -78,12 +87,14 @@ const white_whine = [
                             id:1,
                             name:"Arthur Mertz Gewurztraminer",
                             desc:"",
+                            gram: "",
                             price:59.00,
                         },
                         {
                             id:2,
                             name:"Arthur Mertz Riesling",
                             desc:"",
+                            gram: "",
                             price:59.00,
                         },
                     ],
@@ -95,6 +106,7 @@ const white_whine = [
                             id:1,
                             name:"Ferrande Blanc",
                             desc:"",
+                            gram: "",
                             price:155.00,
                         },
                     ],
@@ -107,12 +119,14 @@ const white_whine = [
                             id:1,
                             name:"Chablis Grand Cru",
                             desc:"",
+                            gram: "",
                             price:265.00,
                         },
                         {
                             id:2,
                             name:"Petit Chablis",
                             desc:"",
+                            gram: "",
                             price:115.00,
                         },
                     ],
@@ -140,8 +154,8 @@ const white_whine = [
       <div class="col-12 col-md-6">
                     <div class="mehsul">
                       <div class="name-price">
-                        <p>${item.name}</p>
-                        <span>${item.price} AZN</span>
+                      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+                      <span class="${func_price(item.price)}">${item.price} AZN</span>
                       </div>
           
                     </div>
@@ -157,8 +171,8 @@ const white_whine = [
       <div class="col-12 col-md-6">
                     <div class="mehsul">
                       <div class="name-price">
-                        <p>${item.name}</p>
-                        <span>${item.price} AZN</span>
+                      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+                      <span class="${func_price(item.price)}">${item.price} AZN</span>
                       </div>
           
                     </div>
@@ -182,8 +196,8 @@ var france_white_inner = "";
                 <div class="col-12 col-md-6">
                                    <div class="mehsul">
                                      <div class="name-price">
-                                       <p>${res.name}</p>
-                                       <span>${res.price} AZN</span>
+                                     <p class="${func(res)}">${res.name} <span class="gram">${res.gram}</span></p>
+                                     <span class="${func_price(res.price)}">${res.price} AZN</span>
                                      </div>
         
                                    </div>
