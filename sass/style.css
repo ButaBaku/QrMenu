@@ -395,4 +395,52 @@ body {
   #cake {
     width: 18%;
   }
+}
+
+.shishaDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-black {
+  background-color: #030303;
+}
+
+.bg-red {
+  background-color: #860404;
+}
+
+.shishaBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50px !important;
+  color: white !important;
+  padding: 30px 20px;
+  border-radius: 10px !important;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.myhiddenShisha {
+  width: 70%;
+}
+.myhiddenShisha .desc {
+  font-family: sans-serif;
+  margin-top: 4px;
+  margin: 0px !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  padding: 0 !important;
+  text-align: start !important;
+}
+
+.buta-name {
+  font-size: 18px !important;
+}
+
+.buta-price {
+  font-size: 18px !important;
 }/*# sourceMappingURL=style.css.map */

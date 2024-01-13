@@ -49,6 +49,13 @@ const isti_yemekler = [
         price: 15.00,
     },
     {
+        id: 7,
+        name: "Xaş",
+        gram: "",
+        desc: "",
+        price: 8.00,
+    },
+    {
         id: 8,
         name: "Küncütlü Toyuq ruleti",
         gram: "(190qr)",

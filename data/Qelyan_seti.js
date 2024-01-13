@@ -22,7 +22,7 @@ const qelyan_setleri = [
     {
         id:3,
         name:"Qəlyan seti 3",
-        price:69.00,
+        price:55.00,
         // products:["Bal","Qaymaq(Üzüm ilə)","Zeytun","Pendir","Kərə Yağı","Pomidor Xiyar","Sosiska","Mürəbbə","Yumurta(Qlazok)"]
         products:"1.Meyvəli Qəlyan </br> 2.Çay </br> 3.Şokolad </br> 4.Paxlava Şəkərbura </br> 5.Çərəz </br> 6.Mürəbbə ",
         img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/sekil9.jpg",

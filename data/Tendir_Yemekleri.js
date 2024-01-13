@@ -98,6 +98,21 @@ const tendir_yemekler=[
         price:9.00,
     },
     {
+        id:19,
+        name:"Buta Kababı",
+        gram: "",
+        desc:"",
+        price:15.00,
+    },
+    {
+        id:14,
+        name:"Quzu Gərdan",
+        gram: "",
+        desc:"",
+        price:15.00,
+    },
+    
+    {
         id:15,
         name:"Dana Basdırma",
         gram: "(200qr)",
