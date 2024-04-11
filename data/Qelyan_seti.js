@@ -5,7 +5,7 @@ const qelyan_setleri = [
         price:35.00,
         // products:["Bal","Qaymaq(Üzüm ilə)","Zeytun","Pendir","Kərə Yağı","Pomidor Xiyar","Sosiska","Mürəbbə","Yumurta(Qlazok)"]
         products:"1.Qəlyan </br> 2.Çay </br> 3.Şokolad </br> 4.Çərəz </br> 5.Mürəbbə",
-        img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/sekil1.jpg",
+        img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/qelyan1.jpeg",
         desc:"",
 
     },
@@ -15,7 +15,7 @@ const qelyan_setleri = [
         price:45.00,
         // products:["Bal","Qaymaq(Üzüm ilə)","Zeytun","Pendir","Kərə Yağı","Pomidor Xiyar","Sosiska","Mürəbbə","Yumurta(Qlazok)"]
         products:"1.Meyvəli Qəlyan </br> 2.Çay </br> 3.Şokolad </br> 4.Mürəbbə </br> 5.Meyvə qurusu",
-        img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/sekil4.jpg",
+        img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/qelyan2.jpeg",
         desc:"",
 
     },
@@ -25,7 +25,7 @@ const qelyan_setleri = [
         price:55.00,
         // products:["Bal","Qaymaq(Üzüm ilə)","Zeytun","Pendir","Kərə Yağı","Pomidor Xiyar","Sosiska","Mürəbbə","Yumurta(Qlazok)"]
         products:"1.Meyvəli Qəlyan </br> 2.Çay </br> 3.Şokolad </br> 4.Paxlava Şəkərbura </br> 5.Çərəz </br> 6.Mürəbbə ",
-        img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/sekil9.jpg",
+        img:"https://raw.githubusercontent.com/ButaBaku/QrMenu/main/img/qelyan3.jpeg",
         desc:"",
 
     },
