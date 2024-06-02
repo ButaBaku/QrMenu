@@ -2,8 +2,10 @@ const soyuq_qelyanaltilar = [
     {
         id:1,
         name:"Tər Pomidor, Xiyar",
+        nameEng:"Tomato, cucumber",
         gram: "",
         desc:"1 ədəd pomidor, 1 ədəd xiyar - 1 porsiya",
+        descEng:"1 tomato, 1 cucumber per - 1 portion",
         price:1.50,
     },
     {
