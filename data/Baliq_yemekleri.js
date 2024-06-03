@@ -130,7 +130,7 @@ baliq_yemekleri_avropa.map((item) => {
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
-                    <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+                    <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
                     <span>${item.price} AZN</span>
                   </div>
       
