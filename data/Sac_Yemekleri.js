@@ -2,23 +2,29 @@ const sac_yemekleri=[
     {
         id:1,
         name:"Sac Quzu əti",
+        nameEng: "Saj lamb meat",
         gram: "(450qr)",
-        desc:"Quzu əti,göbələk,kartof,badımcan </br>,pomidor,bibər,soğan,lavaş",
-        price:25.00
+        desc:"Quzu əti,göbələk,kartof,badımcan,pomidor,bibər,soğan,lavaş",
+        descEng:"Lamb, mushrooms, potato, eggplant, tomato, green pepper, onion, lavash)",
+        price:30.00
     },
     {
         id:2,
         name:"Sac Kənd çolpası",
+        nameEng: "Saj village chicken",
         gram: "(450qr)",
-        desc:"Kənd çolpası,kartof,göbələk,badımcan </br>,pomidor,bibər,soğan,lavaş",
+        desc:"Kənd çolpası,kartof,göbələk,badımcan ,pomidor,bibər,soğan,lavaş",
+        descEng:"(Chicken, potato, mushrooms, eggplant, tomato, green pepper, onion, lavash)",
         price:20.00
     },
     {
         id:3,
         name:"Sac Can əti",
+        nameEng: "Saj tenderloin",
         gram: "(450qr)",
-        desc:"Can əti,kartof,göbələk,badımcan </br>,pomidor,bibər,soğan,lavaş",
-        price:30.00
+        desc:"Can əti,kartof,göbələk,badımcan,pomidor,bibər,soğan,lavaş",
+        descEng:"(Tenderloin, potato, mushrooms, eggplant,tomato, green pepper, onion, lavash)",
+        price:32.00
     },
     
 ]

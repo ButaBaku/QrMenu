@@ -2,37 +2,56 @@ const baliq_yemekleri = [
   {
     id: 1,
     name: "Qızıl Balıq(Setkada)",
+    nameEng: "Salmon on a grid",
     gram: "(200qr)",
     desc:"",
+    descEng: "",
     price: 18.0,
   },
   {
     id: 2,
-    name: "Farel(Manqal/Tava)",
+    name: "Farel",
+    nameEng: "Trout",
     gram: "(350qr)",
-    desc:"",
+    desc:"(manqal/tava)",
+    descEng: "(grilled/roasted)",
     price: 15.0,
   },
   {
     id: 3,
-    name: "Kütüm(Manqal/Tava)",
+    name: "Kütüm",
+    nameEng: "Kutum",
     gram: "(500qr)",
-    desc:"",
-    price: "25.00 / 35.00",
+    desc:"(manqal/tava)",
+    descEng: "(grilled/roasted)",
+    price: 35.00,
   },
   {
     id: 4,
-    name: "Berj(Manqal/Tava)",
-    gram: "(350qr)",
+    name: "Kütüm Ləvəngi",
+    nameEng: "Kutum lavangi",
+    gram: "",
     desc:"",
-    price: 25.0,
+    descEng: "",
+    price: 40.00,
   },
   {
     id: 5,
-    name: "Dorado(Manqal/Tava)",
+    name: "Berj",
+    nameEng: "Perch",
+    gram: "(350qr)",
+    desc:"(manqal/tava)",
+    descEng: "(grilled/roasted)",
+    price: 25.00,
+  },
+  {
+    id: 6,
+    name: "Dorado",
+    nameEng: "Dorado",
     gram: "(450qr)",
-    desc:"",
-    price: 25.0,
+    desc:"(manqal/tava)",
+    descEng: "(grilled/roasted)",
+    price: 22.0,
   },
 ];
 
@@ -40,29 +59,37 @@ const baliq_yemekleri_avropa = [
   {
       id: 1,
       name: "Qızıl Balıq Özəl Sousda",
+      nameEng: "Salmon with special sauce",
       gram: "(400qr)",
       desc: "",
-      price: 22.00,
+      descEng: "",
+      price: 25.00,
   },
   {
       id: 2,
       name: "Forel Tərəvəzlərlə",
+      nameEng: "Trout with vegetables",
       gram: "(350qr)",
       desc: "",
+      descEng: "",
       price: 15.00,
   },
   {
       id: 3,
       name: "İspanaqlı Dorado balığı",
+      nameEng: "Dorado with spinach",
       gram: "(360qr)",
       desc: "",
+      descEng: "",
       price: 22.00,
   },
   {
       id: 4,
       name: "Tuna File Manqalda",
+      nameEng: "Grilled tuna fillet",
       gram: "(280qr)",
       desc: "",
+      descEng: "",
       price: 25.00,
   },
   
@@ -85,7 +112,8 @@ baliq_yemekleri.map((item) => {
                   <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
                     <span class="${func_price(item.price)}">${item.price} AZN</span>
                   </div>
-      
+                  <span class="desc">${item.desc}</span>
+
                 </div>
               </div>
     `;
