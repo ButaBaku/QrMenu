@@ -33,6 +33,7 @@ const usaq_yemekleri = [
     {
         id: 4,
         name: "Mini Burger",
+        nameEng: "Mini Burger",
         gram: "(250qr)",
         desc: "(Ət / toyuq)",
         descEng: "(meat/chicken)",
@@ -110,10 +111,10 @@ usaq_yemekleri.map((item)=>{
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
-      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+      <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
       <span class="${func_price(item.price)}">${item.price} AZN</span>
         </div>
-        <div class="desc">${item.desc}</div>
+        <div class="desc">${localStorage.getItem("langMode")=="az"?item.desc:item.descEng}</div>
 
     </div>
   </div>
