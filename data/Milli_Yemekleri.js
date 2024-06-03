@@ -1,102 +1,157 @@
 const milli_yemekleri = [
     {
-        id:1,
-        name:"Çoban qovurma",
-        gram: "(250qr)",
-        desc:"",
-        price:12.00
-    },
-    {
-        id:2,
-        name:"Şəki Pitisi",
-        gram: "(1 ədəd)",
-        desc:"",
-        price:12.00
-    },
-    {
-        id:3,
-        name:"Yarpaq Dolması",
-        gram: "(200qr)",
-        desc:"",
-        price:7.00
-    },
-    {
-        id:4,
-        name:"Pip Dolması",
-        gram: "(200qr)",
-        desc:"",
-        price:8.00
-    },
-    {
-        id:5,
-        name:"Quzu Buğlama",
-        gram: "(300qr)",
-        desc:"",
-        price:10.00
-    },
-    {
-        id:6,
-        name:"Nar Qovurma(Quzu Əti)",
-        gram: "(250qr)",
-        desc:"",
-        price:15.00
-    },
-    {
-        id:7,
-        name:"Nar Qovurma(Can Əti)",
-        gram: "(250qr)",
-        desc:"",
-        price:18.00
-    },
-    {
-        id:8,
-        name:"Cız-Bız ",
-        gram: "(250qr)",
-        desc:"",
-        price:8.00
-    },
-    {
-        id:9,
-        name:"Can Əti(turşulu/şabalıdlı)",
-        gram: "(250qr)",
-        desc:"",
-        price:15.00
-    },
-    {
-        id:10,
-        name:"Şabalıdlı Maça Qovurma",
-        gram: "(300qr)",
-        desc:"",
-        price:12.00
-    },
-    {
-        id:11,
-        name:"Şirəli Dana",
-        gram: "(250qr)",
-        desc:"",
-        price:14.00
-    },
-    {
-        id:12,
-        name:"Can Əti Qaymaqlı",
+        id: 1,
+        name: "Quzu Gərdan ",
+        nameEng: "Lamb Gardan",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 15.00
+      },
+      {
+        id: 2,
+        name: "Çoban Qovurma",
+        nameEng: "Choban govurma",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 12.00
+      },
+      {
+        id: 3,
+        name: "Şəki Pitisi",
+        nameEng: "Sheki piti",
         gram: "",
-        desc:"",
-        price:14.00
-    },
-    {
-        id:13,
-        name:"Şirəli Xoruz",
-        gram: "(1 ədəd)",
-        desc:"",
-        price:25.00
-    },
-    {
-        id:14,
-        name:"Qaymaqlı Çolpa",
+        desc: "(1 ədəd)",
+        descEng: "(1 clay pot)",
+        price: 10.00
+      },
+      {
+        id: 4,
+        name: "Yarpaq Dolması",
+        nameEng: "Grape leaves dolma",
+        gram: "(200 qr.)",
+        desc: "",
+        descEng: "",
+        price: 8.00
+      },
+      {
+        id: 5,
+        name: "Pip Dolması",
+        nameEng: "Pip dolma",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 8.00
+      },
+      {
+        id: 6,
+        name: "Quzu Buğlama",
+        nameEng: "Lamb bughlama",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 10.00
+      },
+      {
+        id: 7,
+        name: "Dana Buğlama",
+        nameEng: "Beef bughlama",
         gram: "",
-        desc:"",
-        price:18.00
-    },
+        desc: "",
+        descEng: "",
+        price: 10.00
+      },
+      {
+        id: 8,
+        name: "Nar Qovurma (Quzu Əti)",
+        nameEng: "Lamb with roast pomegranate",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 15.00
+      },
+      {
+        id: 9,
+        name: "Nar Qovurma (Can Əti)",
+        nameEng: "Tenderloin with roast pomegranate",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 18.00
+      },
+      {
+        id: 10,
+        name: "Cız-Bız",
+        nameEng: "Jiz-biz lamb giblets",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 9.00
+      },
+      {
+        id: 11,
+        name: "Can Əti (turşulu\şabaladlı)",
+        nameEng: "Tenderloin with plums and chestnuts",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 15.00
+      },
+      {
+        id: 12,
+        name: "Şabaladlı Maça Qovurma",
+        nameEng: "Lamb shank with chestnuts",
+        gram: "(300 qr.)",
+        desc: "",
+        descEng: "",
+        price: 12.00
+      },
+      {
+        id: 13,
+        name: "Şirəli Dana",
+        nameEng: "Juicy beef",
+        gram: "(250 qr.)",
+        desc: "",
+        descEng: "",
+        price: 12.00
+      },
+      {
+        id: 14,
+        name: "Can Əti Qaymaqlı",
+        nameEng: "Tenderloin in a creamy sauce",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 14.00
+      },
+      {
+        id: 15,
+        name: "Şirəli Xoruz",
+        nameEng: "Juicy chicken",
+        gram: "",
+        desc: "(1 ədəd)",
+        descEng: "(1 chicken)",
+        price: 25.00
+      },
+      {
+        id: 16,
+        name: "Qaymaqlı Çolpa",
+        nameEng: "Chicken in a creamy sauce",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 18.00
+      },
+      {
+        id: 17,
+        name: "Maça Peraşki",
+        nameEng: "Lamb shank perashki",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 9.00
+      }
 ]
 
 
