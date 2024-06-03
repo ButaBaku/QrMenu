@@ -1,106 +1,154 @@
 const isti_qelyanaltilar = [
-    {
-        id: 1,
-        name: "Quzu Kəllə Təndir (Şoulu)",
-        gram: "",
-        desc: "Təndirdə bişirilmiş quzu kəllə, közlənmiş yaşıl bibər və ədviyyatlar ilə",
-        price: 19.00,
-    },
-    {
-        id: 2,
-        name: "Sobada Pendirli Göbələk",
-        gram: "(12 ədəd)",
-        desc: "",
-        price: 7.00,
-    },
-    {
-        id: 3,
-        name: "Kükü",
-        gram: "",
-        desc: "göyərti ilə",
-        price: 6.00,
-    },
-    {
-        id: 4,
-        name: "Naxçıvan Qovurması",
-        gram: "(250qr)",
-        desc: "",
-        price: 12.00,
-    },
-    {
-        id: 5,
-        name: "Kükü Naxçıvan Qovurması ilə",
-        gram: "(250 qr)",
-        desc: "",
-        price: 14.00,
-    },
-    {
-        id: 6,
-        name: "Krevetka Tempura Suxari",
-        gram: "(250qr)",
-        desc: "Qızarmış souslu Krevet, göbələk, polorosso yarpağı, qovrulmuş küncüt, yaşıl soğan suxari",
-        price: 16.00,
-    },
+  {
+    id:1,
+    name:"Quzu Kəllə Təndir (Şoulu)",
+    nameEng:"Lamb head in tandoor (6 hours cooking)",
+    gram: "",
+    desc:"(Təndirdə bişirilmiş quzu kəllə, közlənmiş yaşıl bibər və ədviyyatlar ilə)",
+    descEng:"(Lamb head baked in tandoor, grilled pepper and spices)",
+    price: 19.00,
+  },
+
+  {
+    id:2,
+    name:"Sobada Pendirli Göbələk",
+    nameEng:"Cheesy baked mushrooms",
+    gram: "",
+    desc:"(12 ədəd)",
+    descEng:"(12 pieces) ",
+    price: 7.00,
+  },
+
+
+  {
+    id:3,
+    name:"Kükü",
+    nameEng:"Kuku herb omelette",
+    gram: "(göyərti ilə)", // gram qabaginda yazilir
+    desc:"",              // desc altinda yazilir
+    descEng:"",
+    price: 5.00,
+  },
+
+
+  {
+    id:4,
+    name:"Pomidor Yumurta",
+    nameEng:"Tomatoes with eggs",
+    gram: "",
+    desc:"",
+    descEng:"",
+    price: 4.00,
+  },
+
+  {
+    id:5,
+    name:"Naxçıvan Qovurması",
+    nameEng:"Nakhchivan gavurma",
+    gram: "(250qr.)",
+    desc:"",
+    descEng:"",
+    price: 12.00,
+  },
+
+  {
+    id:6,
+    name:"Kükü Naxçıvan Qovurması İlə",
+    nameEng:"Nakhchivan gavurma with kuku",
+    gram: "(250qr.)",
+    desc:"",
+    descEng:"",
+    price: 14.00,
+  },
+
+  {
+    id:7,
+    name:"Krevetka Tempura Suxari",
+    nameEng:"Crispy shrimp tempura",
+    gram: "(250qr.)",
+    desc:"(Qızarmış souslu krevet, göbələk, polorosso yarpağı, qovrulmuş küncüt, yaşıl soğan, suxari )",
+    descEng:"(Roasted shrimp with sauce, polorosso leaves, toasted sesame seeds, green onion",
+    price: 16.00,
+  },
+  
+  
 ]
 
 
 const isti_qelyenaltilar_avropa = [
   {
-      id: 1,
-      name: "Nuggets - Free",
-      gram: "(250qr)",
-      desc: "",
-      price: 7.00,
+    id: 1,
+    name: "Nuggets - Free",
+    nameEng: "Nuggets - Free",
+    gram: "( 250 qr.)",
+    desc: "",
+    descEng: "",
+    price: 7.00
   },
   {
-      id: 2,
-      name: "Soğan Halqaları",
-      gram: "(180qr)",
-      desc: "",
-      price: 5.00,
+    id: 2,
+    name: "Soğan Halqaları",
+    nameEng: "Onion rings",
+    gram: "( 180 qr.)",
+    desc: "",
+    descEng: "",
+    price: 5.00
   },
   {
-      id: 3,
-      name: "BBQ Toyuq Qanadları",
-      gram: "(180qr)",
-      desc: "",
-      price: 6.00,
+    id: 3,
+    name: "BBQ Toyuq Qanadları",
+    nameEng: "BBQ chicken rings",
+    gram: "( 180 qr.)",
+    desc: "",
+    descEng: "",
+    price: 6.00
   },
   {
-      id: 4,
-      name: "Mozzarella Stıcks",
-      gram: "(190qr)",
-      desc: "",
-      price: 6.00,
+    id: 4,
+    name: "Mozzarella Sticks",
+    nameEng: "Mozzarella Sticks",
+    gram: "( 190 qr.)",
+    desc: "",
+    descEng: "",
+    price: 6.00
   },
   {
-      id: 5,
-      name: "Kalmar Halqaları",
-      gram: "(200qr)",
-      desc: "",
-      price: 11.00,
+    id: 5,
+    name: "Kalmar Halqaları",
+    nameEng: "Calmar rings",
+    gram: "( 220 qr.)",
+    desc: "",
+    descEng: "",
+    price: 11.00
   },
   {
-      id: 6,
-      name: "Krevetka Suxarı",
-      gram: "(150qr)",
-      desc: "",
-      price: 12.00,
+    id: 6,
+    name: "Krevetka Suxari",
+    nameEng: "Shrimp tempura",
+    gram: "(150 qr.)",
+    desc: "",
+    descEng: "",
+    price: 12.00
   },
   {
-      id: 7,
-      name: "Kalmar Şefdən Özəl",
-      gram: "(330qr)",
-      desc: "",
-      price: 14.00,
+    id: 7,
+    name: "Kalmar Şefdən Özəl",
+    nameEng: "Special shrimp from chef",
+    gram: "( 330 qr.)",
+    desc: "",
+    descEng: "",
+    price: 14.00
   },
   {
-      id: 8,
-      name: "Chicken Lolita",
-      gram: "(130qr)",
-      desc: "",
-      price: 6.00,
-  },
+    id: 8,
+    name: "Chicken Lolita",
+    nameEng: "Chicken Lolita",
+    gram: "( 130 qr.)",
+    desc: "",
+    descEng: "",
+    price: 6.00
+  }
+  
   
   
 ]

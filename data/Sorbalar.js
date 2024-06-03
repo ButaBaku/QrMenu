@@ -1,70 +1,89 @@
 const sorbalar = [
-    {
-        id: 1,
-        name: "Düşbərə",
-        gram: "(200.qr)",
-        desc: "",
-        price: 5.00
-    },
-    {
-        id: 2,
-        name: "Əriştə",
-        gram: "(200.qr)",
-        desc: "",
-        price: 5.00
-    },
-    {
-        id: 3,
-        name: "Tomat",
-        gram: "(200.qr)",
-        desc: "",
-        price: 5.00
-    },
-    {
-        id: 4,
-        name: "Toyuq",
-        gram: "(200.qr)",
-        desc: "",
-        price: 5.00
-    },
-    {
-        id: 5,
-        name: "Mərci",
-        gram: "(200.qr)",
-        desc: "",
-        price: 5.00
-    },
-    {
-        id: 6,
-        name: "Dovğa",
-        gram: "(200.qr)",
-        desc: "",
-        price: 5.00
-    },
+  {
+    id: 1,
+    name: "Düşbərə",
+    nameEng: "Dushbara dumpling",
+    gram: "(200qr.)",
+    desc: "",
+    descEng: "",
+    price: 4.00
+  },
+  {
+    id: 2,
+    name: "Əriştə",
+    nameEng: "Arishta noodle",
+    gram: "(200qr.)",
+    desc: "",
+    descEng: "",
+    price: 4.00
+  },
+  {
+    id: 3,
+    name: "Tomat",
+    nameEng: "Tomato",
+    gram: "(200qr.)",
+    desc: "",
+    descEng: "",
+    price: 4.00
+  },
+  {
+    id: 4,
+    name: "Toyuq",
+    nameEng: "Chicken",
+    gram: "(200qr.)",
+    desc: "",
+    descEng: "",
+    price: 4.00
+  },
+  {
+    id: 5,
+    name: "Mərci",
+    nameEng: "Lentil",
+    gram: "(200qr.)",
+    desc: "",
+    descEng: "",
+    price: 4.00
+  },
+  {
+    id: 6,
+    name: "Dovğa",
+    nameEng: "Dovga yougurt",
+    gram: "(200qr.)",
+    desc: "",
+    descEng: "",
+    price: 3.00
+  },
 ]
 
 const sorbalar_avropa = [
   {
-      id: 1,
-      name: "Tomat",
-      gram: "(200qr)",
-      desc: "",
-      price: 5.00,
+    id: 1,
+    name: "Tomat",
+    nameEng: "Tomato soup",
+    gram: "(200 qr.)",
+    desc: "",
+    descEng: "",
+    price: 5.00
   },
   {
-      id: 2,
-      name: "Tərəvəz",
-      gram: "(200qr)",
-      desc: "",
-      price: 5.00,
+    id: 2,
+    name: "Tərəvəz",
+    nameEng: "Vegetable soup",
+    gram: "(200 qr.)",
+    desc: "",
+    descEng: "",
+    price: 5.00
   },
   {
-      id: 3,
-      name: "Göbələk",
-      gram: "(200qr)",
-      desc: "",
-      price: 5.00,
+    id: 3,
+    name: "Göbələk",
+    nameEng: "Mushroom soup",
+    gram: "(200 qr.)",
+    desc: "",
+    descEng: "",
+    price: 5.00
   },
+  
       
 ]
 
