@@ -2,42 +2,58 @@ const plovlar = [
     {
         id: 1,
         name: "Şah Plov",
-        gram: "(öncədən rezerv) (1ədəd)",
-        desc: "",
-        price: "30.00 / 40.00",
+        nameEng: "Shah pilaf",
+        gram: "",
+        desc: "(öncədən rezerv) (1 ədəd)",
+        descEng: "(necessary to book in advance) (Lamb, dried apricots, plums, chestnuts",
+        price: 40.00
     },
-
     {
         id: 2,
         name: "Fisincan Plov",
+        nameEng: "Fisinjan pilaf",
         gram: "",
         desc: "",
-        price: 12.00,
+        descEng: "",
+        price: 12.00
     },
-
     {
         id: 3,
-        name: "Səbzi Plov",
-        gram: "(250qr)",
+        name: "Səbzili Plov",
+        nameEng: "Sabzi pilaf",
+        gram: "(250 qr.)",
         desc: "",
-        price: 12.00,
+        descEng: "",
+        price: 12.00
     },
-
     {
         id: 4,
-        name: "Şüyüdlü Plov Quzu Maçası ilə",
-        gram: "(250qr)",
+        name: "Turşu Qovurma Plov",
+        nameEng: "Turshu govurma pilaf",
+        gram: "(250 qr.)",
         desc: "",
-        price: 12.00,
+        descEng: "",
+        price: 12.00
     },
-
     {
         id: 5,
-        name: "Turşu Qovurma Plov",
-        gram: "(250qr)",
+        name: "Südlü Plov Quzu Maçası ilə",
+        nameEng: "",
+        gram: "(250 qr.)",
         desc: "",
-        price: 12.00,
+        // Bunu ozum bele yazdim menyuda balaca ile yazilmisdi
+        descEng: "Dill pilaf with lamb shanks Pilaf with milk and lamb shanks",
+        price: 0
     },
+    {
+        id: 6,
+        name: "Buta Döşəmə",
+        nameEng: "Buta doshama pilaf",
+        gram: "",
+        desc: "Maça / Lülə / Çolpa ilə",
+        descEng: "with lamb shank/ lula/ chicken",
+        price: "10 | 12 | 16"
+    }
 ]
 
 
