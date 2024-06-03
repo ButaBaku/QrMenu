@@ -2,50 +2,46 @@ const qarnirler = [
     {
         id: 1,
         name: "Kartof Free",
+        nameEng: "French fries",
         gram: "(150qr)",
         desc: "",
+        descEng: "",
         price: 3.00,
     },
     {
         id: 2,
-        name: "Rozmarinli Baby Kartof",
+        name: "Sadə Düyü",
+        nameEng: "Rice",
         gram: "(200qr)",
         desc: "",
+        descEng: "",
         price: 4.00,
     },
     {
         id: 3,
-        name: "Sadə Düyü",
+        name: "Badamlı Düyü",
+        nameEng: "Almond rice",
         gram: "(200qr)",
         desc: "",
-        price: 4.00,
+        descEng: "",
+        price: 5.00,
     },
     {
         id: 4,
-        name: "Badamlı Düyü",
+        name: "Tərəvəz İzqara",
+        nameEng: "Grilled vegetables",
         gram: "(200qr)",
         desc: "",
+        descEng: "",
         price: 4.00,
     },
     {
         id: 5,
-        name: "Tərəvəz İzqara",
-        gram: "(200qr)",
-        desc: "",
-        price: 4.00,
-    },
-    {
-        id: 6,
         name: "Ev Sayağı Kartof",
+        nameEng: "Homemade potato",
         gram: "(200qr)",
         desc: "",
-        price: 4.00,
-    },
-    {
-        id: 7,
-        name: "Alma dilim",
-        gram: "(150qr)",
-        desc: "",
+        descEng: "",
         price: 4.00,
     },
 ]
@@ -59,10 +55,10 @@ qarnirler.map((item)=>{
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
-      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+      <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
       <span class="${func_price(item.price)}">${item.price} AZN</span>
         </div>
-        <div class="desc">${item.desc}</div>
+        <div class="desc">${localStorage.getItem("langMode")=="az"?item.desc:item.descEng}</div>
 
     </div>
   </div>

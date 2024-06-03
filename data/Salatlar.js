@@ -108,57 +108,73 @@ const salatlar_avropa = [
     {
         id: 1,
         name: "Sezar Krevetka",
+        nameEng: "Caesar salad with shimp",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 15.00,
     },
     {
         id: 2,
         name: "Sezar Toyuq",
+        nameEng: "Caesar salad with chicken",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 10.00,
     },
     {
         id: 3,
         name: "Qızıl Balıq Salatı",
+        nameEng: "Salmon salad",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 14.00,
     },
     {
         id: 4,
         name: "Tuna Salatı",
+        nameEng: "Tuna Salad",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 12.00,
     },
     {
         id: 5,
         name: "Avakadolu Krevetka Salatı",
+        nameEng: "Shrimp avocado salad",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 14.00,
     },
     {
         id: 6,
         name: "İsti Ət Salatı",
+        nameEng: "Warm meat salad",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 12.00,
     },
     {
         id: 7,
         name: "Tərəvəzli Miks Salatı",
+        nameEng: "Mixed vegetable salad",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 10.00,
     },
     {
         id: 8,
         name: "Yunan Salatı",
+        nameEng: "Greek salad",
         gram: "(220qr)",
         desc: "",
+        descEng: "",
         price: 8.00,
     },
         
@@ -173,10 +189,10 @@ salatlar.map((item)=>{
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
-      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+      <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
       <span class="${func_price(item.price)}">${item.price} AZN</span>
         </div>
-        <div class="desc">${item.desc}</div>
+        <div class="desc">${localStorage.getItem("langMode")=="az"?item.desc:item.descEng}</div>
 
     </div>
   </div>
@@ -195,7 +211,7 @@ salatlar_avropa.map((item) => {
   <div class="col-12 col-md-6">
                 <div class="mehsul">
                   <div class="name-price">
-                  <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+                  <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
                   <span class="${func_price(item.price)}">${item.price} AZN</span>
                   </div>
       
