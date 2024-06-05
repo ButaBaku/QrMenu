@@ -38,12 +38,12 @@ const plovlar = [
     {
         id: 5,
         name: "Südlü Plov Quzu Maçası ilə",
-        nameEng: "",
+        nameEng: "Milky pilaf with lamb shanks",
         gram: "(250 qr.)",
-        desc: "",
+        desc: "Quzu baldırlı şüyüd plov (südlü və quzu ətli plov)",
         // Bunu ozum bele yazdim menyuda balaca ile yazilmisdi
         descEng: "Dill pilaf with lamb shanks Pilaf with milk and lamb shanks",
-        price: 0
+        price: ""
     },
     {
         id: 6,
