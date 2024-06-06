@@ -53,7 +53,6 @@ const seher_yemek_setleri = [
 const seher_yemek_setleri_div = document.getElementById("seher-yemek-setleri");
 const btn_seher_yemek_setleri = document.querySelector(".Seher_Yemek_Setleri_Btn");
 var seher_yemek_setleriinnerDiv = "";
-
 seher_yemek_setleri.map((item,i) => {
     seher_yemek_setleriinnerDiv += `
   <div class="col-12 col-md-6">
@@ -61,12 +60,12 @@ seher_yemek_setleri.map((item,i) => {
                 <img class="set-img" src=${item.img}  href="image">
 
                   <div class="name-price">
-                    <p>${item.name} </p>
+                    <p>${localStorage.getItem("langMode")=="az" ? item.name : item.nameEng} </p>
 
                     
                     <span>${item.price} AZN</span>
                     </div>
-                    <div class="products"> ${item.products} </div>
+                    <div class="products"> ${localStorage.getItem("langMode")=="az" ? item.products : item.productsEng} </div>
 
                   <span class="desc">${item.desc}</span>
                 </div>

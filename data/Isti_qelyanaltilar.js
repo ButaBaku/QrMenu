@@ -175,7 +175,7 @@ isti_qelyanaltilar.map((item) => {
 
 const isti_qelyanaltilar_avropa_div = document.getElementById("isti-qelyanalti-avropa");
 
-var isti_qelyanaltilar_avropainnerDiv ='<p class="avropaMetbexi">Avropa mətbəxi</p>';
+var isti_qelyanaltilar_avropainnerDiv =`<p class="avropaMetbexi">${localStorage.getItem("langMode")=="az" ? "Avropa mətbəxi" : "European Cuisine"}</p>`;
 
 
 isti_qelyenaltilar_avropa.map((item) => {

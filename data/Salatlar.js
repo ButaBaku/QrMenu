@@ -203,7 +203,7 @@ salatlar.map((item)=>{
 
 const salatlar_avropa_div = document.getElementById("salatlar-avropa");
 
-var salatlar_avropainnerDiv ='<p class="avropaMetbexi">Avropa mətbəxi</p>';
+var salatlar_avropainnerDiv = `<p class="avropaMetbexi">${localStorage.getItem("langMode")=="az" ? "Avropa mətbəxi" : "European Cuisine"}</p>`;
 
 
 salatlar_avropa.map((item) => {

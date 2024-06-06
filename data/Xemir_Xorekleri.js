@@ -71,10 +71,10 @@ const xemir_xorekleri =[
 
 const xemir_xorekleri_div = document.getElementById('xemir-yemekler');
 const xemir_xorekleri_btn = document.querySelector(".xemir_yemekler_Btn")
-var pizzalar_inner = "";
+var xemir_xorekleri_inner = "";
 
 xemir_xorekleri.map((item)=>{
-    pizzalar_inner+= `
+    xemir_xorekleri_inner+= `
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
@@ -90,7 +90,7 @@ xemir_xorekleri.map((item)=>{
 
 xemir_xorekleri_btn.onclick=()=>{
     if(xemir_xorekleri_div.innerHTML==""){
-        xemir_xorekleri_div.innerHTML = pizzalar_inner;
+        xemir_xorekleri_div.innerHTML = xemir_xorekleri_inner;
     }else{
         xemir_xorekleri_div.innerHTML="";  
     }

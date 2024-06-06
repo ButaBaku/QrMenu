@@ -5,6 +5,7 @@ const pizzalar = [
         nameEng: "Sezar Pizza",
         gram: "(240qr)",
         desc: "",
+        descEng: "",
         price: 12.00,
     },
 
@@ -14,6 +15,7 @@ const pizzalar = [
         nameEng: "Margarita Pizza",
         gram: "(180qr)",
         desc: "",
+        descEng: "",
         price: 8.00,
     },
 
@@ -23,6 +25,7 @@ const pizzalar = [
         nameEng: "Peperoni",
         gram: "(300qr)",
         desc: "",
+        descEng: "",
         price: 12.00,
     },
 
@@ -32,6 +35,7 @@ const pizzalar = [
         nameEng: "BBQ Pizza",
         gram: "(330qr)",
         desc: "",
+        descEng: "",
         price: 12.00,
     },
 
@@ -41,6 +45,7 @@ const pizzalar = [
         nameEng: "Tuna Pizza",
         gram: "(390qr)",
         desc: "",
+        descEng: "",
         price: 14.00,
     },
 
@@ -50,6 +55,7 @@ const pizzalar = [
         nameEng: "Mix Pizza",
         gram: "(390qr)",
         desc: "",
+        descEng: "",
         price: 14.00,
     },
 
@@ -59,6 +65,7 @@ const pizzalar = [
         nameEng: "New York Pizza",
         gram: "(340qr)",
         desc: "",
+        descEng: "",
         price: 11.00,
     },
 
@@ -68,6 +75,7 @@ const pizzalar = [
         nameEng: "4 Cheese Pizza",
         gram: "(290qr)",
         desc: "",
+        descEng: "",
         price: 12.00,
     },
    
@@ -81,15 +89,15 @@ var pizzalar_inner = "";
 pizzalar.map((item)=>{
     pizzalar_inner+= `
     <div class="col-12 col-md-6">
-    <div class="mehsul">
-      <div class="name-price">
-      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
-      <span class="${func_price(item.price)}">${item.price} AZN</span>
-        </div>
-        <div class="desc">${item.desc}</div>
+                <div class="mehsul">
+                  <div class="name-price">
+                    <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
+                    <span class="${func_price(item.price)}">${item.price} AZN</span>
+                  </div>
 
-    </div>
-  </div>
+                  <span class="desc">${localStorage.getItem("langMode")=="az"?item.desc:item.descEng}</span>
+                </div>
+              </div>
     `
 })
 

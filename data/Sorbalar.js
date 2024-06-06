@@ -110,7 +110,7 @@ sorbalar.map((item) => {
 
 const sorbalar_avropa_div = document.getElementById("sorbalar-avropa");
 
-var sorbalar_avropainnerDiv ='<p class="avropaMetbexi">Avropa mətbəxi</p>';
+var sorbalar_avropainnerDiv = `<p class="avropaMetbexi">${localStorage.getItem("langMode")=="az" ? "Avropa mətbəxi" : "European Cuisine"}</p>`;
 
 
 sorbalar_avropa.map((item) => {
