@@ -2,107 +2,168 @@ const desertler = [
     {
         id: 1,
         name: "Künəfə",
-        gram: "(Sadə/Pendirli/Püstəli)",
-        desc: "",
+        nameEng: "Kunefe",
+        gram: "",
+        desc: "(Sadə/Pendirli/Püstəli)",
+        descEng: "(simple/cheese/pistachio)",
         price: "8.00 / 9.00",
     },
 
     {
         id: 2,
         name: "Sütlü Nuriye",
+        nameEng: "Nuriye with milk",
         gram: "",
         desc: "",
+        descEng: "",
         price: 9.00,
     },
 
     {
         id: 3,
         name: "San Sebastian Cheesecake",
+        nameEng: "San Sebastian Cheesecake",
         gram: "",
         desc: "",
+        descEng: "",
         price: 9.00,
     },
 
     {
         id: 4,
-        name: "Tiramisu",
+        name: "Ballı Tort",
+        nameEng: "Honey Cake",
         gram: "",
         desc: "",
+        descEng: "",
         price: 8.00,
     },
 
     {
         id: 5,
-        name: "Ballı Tort",
+        name: "Bakı Paxlavası",
+        nameEng: "Baku Pakhlava",
         gram: "",
-        desc: "",
-        price: 8.00,
+        desc: "(3ədəd)",
+        descEng: "(3pieces)",
+        price: 6.00,
     },
 
     {
         id: 6,
-        name: "Bakı Paxlavası",
-        gram: "(3ədəd)",
-        desc: "",
-        price: 5.00,
+        name: "Şəkərbura",
+        nameEng: "Shakarbura",
+        gram: "",
+        desc: "(3ədəd)",
+        descEng: "(3pieces)",
+        price: 6.00,
     },
 
     {
         id: 7,
-        name: "Şəkərbura",
-        gram: "(3ədəd)",
-        desc: "",
+        name: "Dondurma",
+        nameEng: "Ice-cream",
+        gram: "",
+        desc: "(3top seçməli),(Sadə,Şokaoladlı,Antep fıstıqlı,Çiyələkli,Limonlu)",
+        descEng: "(3 ball choosing)",
         price: 5.00,
     },
 
     {
         id: 8,
-        name: "Dondurma",
-        gram: "(3top seçməli)",
-        desc: "(Sadə,Şokaoladlı,Antep fıstıqlı,Çiyələkli,Limonlu)",
-        price: 5.00,
+        name: "Meyvə Assorti",
+        nameEng: "Fruit assorti",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 12.00,
     },
 
     {
         id: 9,
-        name: "Meyvə Assorti",
+        name: "Mövsüm Meyvə",
+        nameEng: "Seasonal fruits",
         gram: "",
         desc: "",
-        price: 18.00,
+        descEng: "",
+        price: 12.00,
     },
 
     {
         id: 10,
-        name: "Çay-Çaynik",
+        name: "Alça",
+        nameEng: "Plum",
         gram: "",
         desc: "",
+        descEng: "",
         price: 5.00,
     },
 
     {
-        id: 11,
-        name: "Çay Samovar",
-        gram: "",
-        desc: "",
-        price: 20.00,
-    },
-
-    {
         id: 12,
-        name: "Mürəbbələr",
+        name: "Çiyələk",
+        nameEng: "Strawberry",
         gram: "",
         desc: "",
+        descEng: "",
         price: 5.00,
     },
 
     {
         id: 13,
-        name: "Çərəzlər",
+        name: "Qarpız, Yemiş",
+        nameEng: "Watermelon, melon",
         gram: "",
         desc: "",
-        price: 15.00,
+        descEng: "",
+        price: 5.00,
     },
 
+    {
+        id: 14,
+        name: "Vişnə",
+        nameEng: "Sour cherry",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 5.00,
+    },
+    {
+        id: 15,
+        name: "Çay – Çaynik",
+        nameEng: "Tea, tea-pot",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 5.00,
+    },
+    {
+        id: 16,
+        name: "Çay Samovar",
+        nameEng: "Tea samovar",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 20.00,
+    },
+    {
+        id: 17,
+        name: "Mürəbbələr",
+        nameEng: "Jams",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 5.00,
+    },
+    {
+        id: 18,
+        name: "Çərəzlər",
+        nameEng: "Dried fruits",
+        gram: "",
+        desc: "",
+        descEng: "",
+        price: 15.00,
+    },
     
 
 ]
@@ -117,10 +178,10 @@ desertler.map((item)=>{
     <div class="col-12 col-md-6">
     <div class="mehsul">
       <div class="name-price">
-      <p class="${func(item)}">${item.name} <span class="gram">${item.gram}</span></p>
+      <p class="${func(item)}">${localStorage.getItem("langMode")=="az"?item.name:item.nameEng} <span class="gram">${item.gram}</span></p>
       <span class="${func_price(item.price)}">${item.price} AZN</span>
         </div>
-        <div class="desc">${item.desc}</div>
+        <div class="desc">${localStorage.getItem("langMode")=="az"?item.desc:item.descEng}</div>
 
     </div>
   </div>
