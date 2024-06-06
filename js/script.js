@@ -146,7 +146,7 @@ if (localStorage.getItem("langMode") == 'az') {
   sac_yemekleri_lang.textContent = 'SAJ DISHES';
   plovlar_lang.textContent = 'plovlar';
   baliq_yemekleri_lang.textContent = 'FISH DISHES';  
-  toyuq_yemekleri_lang.textContent = 'TOYUQ YEMƏKLƏR';
+  toyuq_yemekleri_lang.textContent = 'CHICKEN DISHES';
   burgerler_lang.textContent = 'BURGERS';  
   rollsandvich_lang.textContent = 'ROLL AND SANDWICH';  
   pizzalar_lang.textContent = 'PİZZAS';  
