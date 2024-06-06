@@ -2,6 +2,7 @@ const sendvic = [
     {
         id: 1,
         name: "Wrap Chicken/Beef",
+        nameEng: "Wrap Chicken/Beef",
         gram: "(250qr)",
         desc: "",
         price: "7.00 / 9.00",
@@ -9,6 +10,7 @@ const sendvic = [
     {
         id: 2,
         name: "Sezar Roll Chicken/Shrimp/Salmon",
+        nameEng: "Sezar Roll Chicken/Shrimp/Salmon",
         gram: "(170qr)",
         desc: "",
         price: "8.00 / 11.00 / 13.00",
@@ -16,6 +18,7 @@ const sendvic = [
     {
         id: 3,
         name: "Club Sendviç",
+        nameEng: "Club Sandwich",
         gram: "(260qr)",
         desc: "",
         price: 9.00,
@@ -23,6 +26,7 @@ const sendvic = [
     {
         id: 4,
         name: "Vietnam Sendviç",
+        nameEng: "Vietnam Sandwich",
         gram: "(210qr)",
         desc: "",
         price: 11.00,
@@ -30,6 +34,7 @@ const sendvic = [
     {
         id: 5,
         name: "Salmon Sendviç",
+        nameEng: "Salmon Sandwich",
         gram: "(190qr)",
         desc: "",
         price: 14.00,
@@ -37,6 +42,7 @@ const sendvic = [
     {
         id: 6,
         name: "Tuna Sendviç",
+        nameEng: "Tuna Sandwich",
         gram: "(170qr)",
         desc: "",
         price: 10.00,

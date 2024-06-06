@@ -2,56 +2,70 @@ const isti_ickiler = [
     {
         id: 1,
         name: "Espresso",
+        nameEng: "Espresso",
         gram: "",
         desc: "",
+        descEng: "",
         price: 4.00,
     },
 
     {
         id: 2,
         name: "Double Espresso",
+        nameEng: "Double Espresso",
         gram: "",
         desc: "",
+        descEng: "",
         price: 5.00,
     },
 
     {
         id: 3,
         name: "Americano",
+        nameEng: "Americano",
         gram: "",
         desc: "",
+        descEng: "",
         price: 5.00,
     },
 
     {
         id: 4,
         name: "Cappuccino",
+        nameEng: "Cappuccino",
         gram: "",
         desc: "",
+        descEng: "",
         price: 7.00,
     },
 
     {
         id: 5,
         name: "Latte",
+        nameEng: "Latte",
         gram: "",
         desc: "",
+        descEng: "",
         price: 7.00,
     },
 
     {
         id: 6,
         name: "Raf",
+        nameEng: "Raf",
         gram: "",
         desc: "",
-        price: 7.00,
+        descEng: "",
+        price: 8.00,
     },
 
     {
         id: 7,
         name: "Türk qəhvəsi",
+        nameEng: "Turkish coffee",
         gram: "",
         desc: "",
+        descEng: "",
         price: 4.00,
     },
 

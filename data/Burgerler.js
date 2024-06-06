@@ -29,6 +29,9 @@ const burgerler = [
   },
 ];
 
+
+// El deyemeye ehtiyac yoxdu onsuz deyismiyib qiymetler
+
 const burgerler_div = document.getElementById("burgerler");
 const burgerlerBtn = document.querySelector(".burgerlerBtn");
 var burgerlerinnerDiv = "";
