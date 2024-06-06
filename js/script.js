@@ -151,7 +151,7 @@ if (localStorage.getItem("langMode") == 'az') {
   rollsandvich_lang.textContent = 'ROLL AND SANDWICH';  
   pizzalar_lang.textContent = 'PİZZAS';  
   usaq_menyusu_lang.textContent = 'KIDS MENU';  
-  qarnirler_lang.textContent = 'GARNİSHE';  
+  qarnirler_lang.textContent = 'GARNİSHES';  
   sorbalar_lang.textContent = 'SOUPS';  
   pastalar_lang.textContent = 'PASTALAR';  
   salatlar_lang.textContent = 'SALADS';  
