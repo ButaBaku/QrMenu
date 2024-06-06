@@ -140,11 +140,11 @@ if (localStorage.getItem("langMode") == 'az') {
   xemir_yemekler_lang.textContent = 'FARINACEOUS DISHES';
   tendir_yemekler_lang.textContent = 'TANDOORI DISHES';
   steak_lang.textContent = 'STEAK';
-  isti_yemekler_lang.textContent = 'HOT DISHER';
+  isti_yemekler_lang.textContent = 'HOT DISHES';
   soyuq_qelyanaltilar_lang.textContent = 'COLD SNACKS';
   isti_qelyanaltilar_lang.textContent = 'HOT SNACKS';
   sac_yemekleri_lang.textContent = 'SAJ DISHES';
-  plovlar_lang.textContent = 'plovlar';
+  plovlar_lang.textContent = 'PILAFS';
   baliq_yemekleri_lang.textContent = 'FISH DISHES';  
   toyuq_yemekleri_lang.textContent = 'CHICKEN DISHES';
   burgerler_lang.textContent = 'BURGERS';  
