@@ -31,6 +31,9 @@ const sneak = [
     
 ]
 
+
+// El deyemeye ehtiyac yoxdu onsuz deyismiyib qiymetler
+
 const steak_div = document.getElementById('steak');
 const steak_btn = document.querySelector(".steak_Btn")
 var steak_inner = "";

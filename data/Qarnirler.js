@@ -44,6 +44,15 @@ const qarnirler = [
         descEng: "",
         price: 4.00,
     },
+    {
+        id: 6,
+        name: "Alma Dilimi",
+        nameEng: "Apple slices",
+        gram: "(200qr)",
+        desc: "",
+        descEng: "",
+        price: 4.00,
+    },
 ]
 
 const qarnirler_div = document.getElementById('qarnirler');

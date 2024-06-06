@@ -2,6 +2,7 @@ const pizzalar = [
     {
         id: 1,
         name: "Sezar Pizza",
+        nameEng: "Sezar Pizza",
         gram: "(240qr)",
         desc: "",
         price: 12.00,
@@ -10,6 +11,7 @@ const pizzalar = [
     {
         id: 2,
         name: "Marqarita Pizza",
+        nameEng: "Margarita Pizza",
         gram: "(180qr)",
         desc: "",
         price: 8.00,
@@ -18,6 +20,7 @@ const pizzalar = [
     {
         id: 3,
         name: "Peperoni",
+        nameEng: "Peperoni",
         gram: "(300qr)",
         desc: "",
         price: 12.00,
@@ -26,6 +29,7 @@ const pizzalar = [
     {
         id: 4,
         name: "BBQ Pizza",
+        nameEng: "BBQ Pizza",
         gram: "(330qr)",
         desc: "",
         price: 12.00,
@@ -34,6 +38,7 @@ const pizzalar = [
     {
         id: 5,
         name: "Tuna Pizza",
+        nameEng: "Tuna Pizza",
         gram: "(390qr)",
         desc: "",
         price: 14.00,
@@ -42,6 +47,7 @@ const pizzalar = [
     {
         id: 6,
         name: "Mix Pizza",
+        nameEng: "Mix Pizza",
         gram: "(390qr)",
         desc: "",
         price: 14.00,
@@ -50,6 +56,7 @@ const pizzalar = [
     {
         id: 7,
         name: "New York Pizza",
+        nameEng: "New York Pizza",
         gram: "(340qr)",
         desc: "",
         price: 11.00,
@@ -58,6 +65,7 @@ const pizzalar = [
     {
         id: 8,
         name: "4 Pendirli Pizza",
+        nameEng: "4 Cheese Pizza",
         gram: "(290qr)",
         desc: "",
         price: 12.00,
