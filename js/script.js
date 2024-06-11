@@ -162,7 +162,7 @@ if (localStorage.getItem("langMode") == 'az') {
   desertler_lang.textContent = 'DESSERTS';  
   seher_yemek_setleri_lang.textContent = 'BREAKFAST SETS';  
   qelyan_setleri_lang.textContent = 'SHİSHA SETS';  
-  shisha_setleri_lang.textContent = 'SHİSHA SETS';
+  shisha_setleri_lang.textContent = 'OUR SHİSHA SETS';
   kabablar_lang.textContent = 'KEBABS';  
   
 
