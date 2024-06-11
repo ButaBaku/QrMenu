@@ -98,10 +98,9 @@ const func_price =(price)=>{
   const seher_yemek_setleri_lang = document.querySelector("#seher_yemek_setleri_lang");
   const qelyan_setleri_lang = document.querySelector("#qelyan_setleri_lang");
   const shisha_setleri_lang = document.querySelector("#shisha_setleri_lang");
+  const kabablar_lang = document.querySelector("#kabablar_lang");
 
 
-
-  shisha_setleri_lang
 
 if (localStorage.getItem("langMode") == 'az') {
   milli_yemekler_lang.textContent = 'Mİllİ YEMƏKLƏR';
@@ -131,8 +130,9 @@ if (localStorage.getItem("langMode") == 'az') {
   seher_yemek_setleri_lang.textContent = 'SƏHƏR YEMƏK SETLƏRİ';
   qelyan_setleri_lang.textContent = 'QƏLYAN SETLƏRİ';
   shisha_setleri_lang.textContent = 'SHİSHA SETS';
+  kabablar_lang.textContent = 'KABABLAR';
 
-
+  
 
   
 } else {
@@ -162,7 +162,8 @@ if (localStorage.getItem("langMode") == 'az') {
   desertler_lang.textContent = 'DESSERTS';  
   seher_yemek_setleri_lang.textContent = 'BREAKFAST SETS';  
   qelyan_setleri_lang.textContent = 'SHİSHA SETS';  
-  shisha_setleri_lang.textContent = 'OUR SHİSHA SETS';  
+  shisha_setleri_lang.textContent = 'SHİSHA SETS';
+  kabablar_lang.textContent = 'KEBABS';  
   
 
 
