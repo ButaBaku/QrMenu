@@ -2,7 +2,7 @@
 const kabablar =[
     {
         id: 1,
-        name: "Buta kabab",
+        name: "Buta Kabab",
         nameEng: "Buta kebab",
         gram: "",
         desc: "",
@@ -74,7 +74,7 @@ const kabablar =[
       },
       {
         id: 9,
-        name: "Tikə kabab",
+        name: "Tikə Kabab",
         nameEng: "Lamb kebab",
         gram: "",
         desc: "",
@@ -110,7 +110,7 @@ const kabablar =[
       },
       {
         id: 13,
-        name: "Maça Kababı",
+        name: "Maça Kabab",
         nameEng: "Lamb shank kebab",
         gram: "",
         desc: "",
@@ -119,7 +119,7 @@ const kabablar =[
       },
       {
         id: 14,
-        name: "“Semiçka” Kababı",
+        name: "“Semiçka” Kabab",
         nameEng: "“Semichka” kebab",
         gram: "",
         desc: "",
@@ -128,7 +128,7 @@ const kabablar =[
       },
       {
         id: 15,
-        name: "Xan Kababı",
+        name: "Xan Kabab",
         nameEng: "Khan kebab",
         gram: "",
         desc: "",
@@ -137,7 +137,7 @@ const kabablar =[
       },
       {
         id: 16,
-        name: "İçalat Kababı",
+        name: "İçalat Kabab",
         nameEng: "Ichalat giblets kebab",
         gram: "",
         desc: "",
@@ -146,7 +146,7 @@ const kabablar =[
       },
       {
         id: 17,
-        name: "Quyruq Kababı",
+        name: "Quyruq Kabab",
         nameEng: "Lamb tail fat kebab",
         gram: "",
         desc: "",
@@ -155,8 +155,8 @@ const kabablar =[
       },
       {
         id: 19,
-        name: "Lamb on a stick",
-        nameEng: "Quzu çöp şiş",
+        name: "Quzu çöp şiş",
+        nameEng: "Lamb on a stick",
         gram: "",
         desc: "",
         descEng: "",
@@ -191,7 +191,7 @@ const kabablar =[
       },
       {
         id: 23,
-        name: "Koroğlu Kababı",
+        name: "Koroğlu Kabab",
         nameEng: "Koroghlu kebab",
         gram: "",
         desc: "",
@@ -200,7 +200,7 @@ const kabablar =[
       },
       {
         id: 24,
-        name: "Hinduşka Kababı",
+        name: "Hinduşka Kabab",
         nameEng: "Turkey kebab",
         gram: "",
         desc: "",
@@ -218,7 +218,7 @@ const kabablar =[
       },
       {
         id: 26,
-        name: "Toyuq Kababı",
+        name: "Toyuq Kabab",
         nameEng: "Chicken kebab",
         gram: "",
         desc: "",
@@ -227,7 +227,7 @@ const kabablar =[
       },
       {
         id: 27,
-        name: "Toyuq Lüləsi",
+        name: "Toyuq Lülə",
         nameEng: "Chicken Lula",
         gram: "",
         desc: "",
@@ -255,7 +255,7 @@ const kabablar =[
       // qiymeti yoxdu
       {
         id: 30,
-        name: "Nərə Balığı Kababı",
+        name: "Nərə Balığı Kabab",
         nameEng: "Sturgeon kebab",
         gram: "",
         desc: "",
@@ -264,7 +264,7 @@ const kabablar =[
       },
       {
         id: 31,
-        name: "Tərəvəz Kababı",
+        name: "Tərəvəz Kabab",
         nameEng: "Vegetable kebab",
         gram: "",
         desc: "",
@@ -282,7 +282,7 @@ const kabablar =[
       },
       {
         id: 33,
-        name: "Kartof Lüləsi",
+        name: "Kartof Lülə",
         nameEng: "Potato Lula",
         gram: "",
         desc: "",
@@ -300,7 +300,7 @@ const kabablar =[
       },
       {
         id: 35,
-        name: "Bildirçin Kababə",
+        name: "Bildirçin Kabab",
         nameEng: "Quail kebab",
         gram: "",
         desc: "",
