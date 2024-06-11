@@ -3,9 +3,9 @@ const xemir_xorekleri =[
         id: 1,
         name: "Blinçik",
         nameEng: "Blinchik with cottage cheese",
-        gram: "(kəsmikli) (1ədəd)",
-        desc: "",
-        descEng: "",
+        gram: "",
+        desc: "(kəsmikli) (1ədəd)",
+        descEng: "(curded) (1piece)",
         price: 2.00,
     },
 
@@ -61,7 +61,7 @@ const xemir_xorekleri =[
     {
         id: 8,
         name: "Gürzə",
-        nameEng: "Gürzə",
+        nameEng: "Gyurza",
         gram: "",
         desc: "(12 ədəd)",
         descEng: "(12 pieces)",

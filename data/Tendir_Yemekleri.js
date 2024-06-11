@@ -41,7 +41,7 @@ const tendir_yemekler=[
         nameEng: "Whole lamb in tandoor",
         gram: "",
         desc: "(ləvəngili | düyü ilə)(öncədən rezerv ilə)",
-        descEng: "(with lavangi | with rice)(necessary to book in advance",
+        descEng: "(with lavangi | with rice)(necessary to book in advance)",
         price: ""
       },
 ]
