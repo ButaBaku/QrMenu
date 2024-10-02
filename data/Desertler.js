@@ -103,6 +103,30 @@ const desertler = [
         price: 15.00,
     },
 
+    {
+        id: 14,
+        name: "Zoğal",
+        gram: "",
+        desc: "",
+        price: 5.00,
+    },
+
+    {
+        id: 15,
+        name: "Vişnə",
+        gram: "",
+        desc: "",
+        price: 5.00,
+    },
+
+    {
+        id: 16,
+        name: "Üzüm",
+        gram: "",
+        desc: "",
+        price: 5.00,
+    },
+
     
 
 ]

@@ -6,7 +6,7 @@ const toyuq_yemekleri = [
         gram: "(450qr)",
         desc:"",
         descEng: "",
-        price:17.00,
+        price:20.00,
     },
     {
         id:2,
@@ -24,7 +24,7 @@ const toyuq_yemekleri = [
         gram: "",
         desc:"(1 ədəd)",
         descEng: "(1 chicken)",
-        price:15.00,
+        price:18.00,
     },
     {
         id:4,
@@ -33,7 +33,7 @@ const toyuq_yemekleri = [
         gram: "(450qr)",
         desc:"",
         descEng: "",
-        price:18.00,
+        price:20.00,
     },
 ]
 

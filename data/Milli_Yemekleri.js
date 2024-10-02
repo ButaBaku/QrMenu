@@ -33,7 +33,7 @@ const milli_yemekleri = [
         gram: "(200 qr.)",
         desc: "",
         descEng: "",
-        price: 8.00
+        price: 9.00
       },
       {
         id: 5,
@@ -42,7 +42,7 @@ const milli_yemekleri = [
         gram: "(250 qr.)",
         desc: "",
         descEng: "",
-        price: 8.00
+        price: 10.00
       },
       {
         id: 6,
@@ -87,7 +87,7 @@ const milli_yemekleri = [
         gram: "(250 qr.)",
         desc: "",
         descEng: "",
-        price: 9.00
+        price: 10.00
       },
       {
         id: 11,
@@ -141,7 +141,7 @@ const milli_yemekleri = [
         gram: "",
         desc: "",
         descEng: "",
-        price: 18.00
+        price: 20.00
       },
       {
         id: 17,

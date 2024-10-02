@@ -61,7 +61,7 @@ const kabablar =[
         gram: "",
         desc: "",
         descEng: "",
-        price: 14.00
+        price: 15.00
       },
       {
         id: 8,

@@ -42,7 +42,7 @@ const salatlar = [
         gram: "(250qr)",
         desc:"Qızarmış çıtır badımcan,küncüt,rəndələnmiş parmezan pendiri,yaşıl soğan və xırt sous ilə",
         descEng:"Crispy eggplant, sesame seeds, parmesan cheese, green onion, special sauce",
-        price:5.00,
+        price:6.00,
     },
     {
         id:6,
@@ -51,7 +51,7 @@ const salatlar = [
         gram: "(220qr)",
         desc:"Pomidor,xiyar,yaşıl bibər,soğan,cəfəri,limon sousu",
         descEng:"Red onion, tomato, basil, mint, cornelian cherry sauce, sour cherry",
-        price:5.00,
+        price:6.00,
     },
     {
         id:7,

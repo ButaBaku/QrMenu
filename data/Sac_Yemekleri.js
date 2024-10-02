@@ -15,7 +15,7 @@ const sac_yemekleri=[
         gram: "(450qr)",
         desc:"Kənd çolpası,kartof,göbələk,badımcan ,pomidor,bibər,soğan,lavaş",
         descEng:"(Chicken, potato, mushrooms, eggplant, tomato, green pepper, onion, lavash)",
-        price:20.00
+        price:25.00
     },
     {
         id:3,
@@ -24,7 +24,7 @@ const sac_yemekleri=[
         gram: "(450qr)",
         desc:"Can əti,kartof,göbələk,badımcan,pomidor,bibər,soğan,lavaş",
         descEng:"(Tenderloin, potato, mushrooms, eggplant,tomato, green pepper, onion, lavash)",
-        price:32.00
+        price:35.00
     },
     
 ]

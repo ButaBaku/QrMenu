@@ -55,7 +55,7 @@ const xemir_xorekleri =[
         gram: "",
         desc: "(5ədəd)",
         descEng: "(5pieces)",
-        price: 6.00,
+        price: 8.00,
     },
 
     {
