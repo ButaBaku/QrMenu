@@ -1,0 +1,57 @@
+:root {
+    --header-bg: #030303;
+    --primary-color: #b40205;
+    --text-color-light: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    width: 100%;
+    background-color: var(--header-bg);
+    padding: 3vh 0;
+    box-shadow: 0 3vh 4px var(--shadow-color);
+    .container {
+      .header-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .logo-box {
+          width: 20%;
+          max-width: 100px;
+          img {
+            width: 100%;
+          }
+        }
+  
+        .language-box {
+          .dropdown {
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            .dropdown-toggle {
+              color: var(--primary-color);
+              font-weight: bolder;
+            }
+            .dropdown-menu {
+              background-color: var(--header-bg);
+              .active-lang {
+                background-color: var(--primary-color);
+                a {
+                  color: var(--text-color-light);
+                }
+              }
+              li {
+                a {
+                  color: var(--text-color-light);
+                }
+                --bs-dropdown-link-hover-bg: var(--primary-color);
+                --bs-dropdown-link-active-bg: var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
