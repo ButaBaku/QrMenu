@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import './assets/sass/style.scss'
-import Foods from './components/Foods'
-import Footer from './components/Footer'
 import Header from './components/Header'
+import Meals from './components/Meals'
+import { LANGUAGE } from './data/langugage'
 
 const App = () => {
+
+  const [language , setLanguage] = useState(LANGUAGE.DEFAULT);
   return (
     <div>
-      <Header />
-      <Foods headerTitle="Səhər Yeməyi"/>
+      <Header handleLanguage={setLanguage}/>
+      <Meals selectedLanguage={language}/>
       {/* <Footer/>  */}
     </div>
   )

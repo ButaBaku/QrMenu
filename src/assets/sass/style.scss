@@ -1,3 +1,20 @@
 @import "./foods.scss";
 @import "./footer.scss";
 @import "./header.scss";
+@import "./infoText.scss";
+@import "./meals.scss";
+
+:root {
+    --header-bg: #030303;
+    --primary-color: #b40205;
+    --text-color-light: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --secondary-bg: #1a1a1a;
+    --card-bg-color: #2a2a2a;
+    --text-color-gold: #8E663C;
+}
+
+body{
+    background-color: var(--secondary-bg);
+}
+  
