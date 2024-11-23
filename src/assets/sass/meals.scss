@@ -1,4 +1,4 @@
-.categories {
+.meals {
     width: 100%;
     .container {
   
@@ -14,7 +14,7 @@
             margin: 8px;
             width: 25%;
             max-width: 100px;
-            border: 1px solid #8E663C;
+            border: 1px solid var(--text-color-gold);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             font-size: 15px;
@@ -41,13 +41,13 @@
                     margin: 0;
                     padding: 0;
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    color: #8E663C;
+                    color: var(--text-color-gold);
                 }
             }
             
           }
           .active-item{
-            background-color: #8E663C;
+            background-color: var(--text-color-gold);
             .text-box{
                 .content-text{
                     color: #fff;

@@ -1,4 +1,5 @@
 export const LANGUAGE = {
+    DEFAULT : "AZ",
     AZ : "AZ",
     EN : "EN"
 }

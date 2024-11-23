@@ -1,54 +1,64 @@
-import image from '../assets/testImg/category.jpg'
+import image from '../assets/testImg/category.jpg';
 
 export const mockCategories = [
     {
         id: 1,
-        title: "Səhər yeməyi",
+        titleAZ: "Səhər yeməyi",
+        titleEN: "Breakfast",
         image: image
     },
     {
         id: 2,
-        title: "Qəlyanaltılar safkasnf",
+        titleAZ: "Qəlyanaltılar",
+        titleEN: "Snacks",
         image: image
     },
     {
         id: 3,
-        title: "Şam yeməyi",
+        titleAZ: "Şam yeməyi",
+        titleEN: "Dinner",
         image: image
     },
     {
         id: 4,
-        title: "Şirniyyat",
+        titleAZ: "Şirniyyat",
+        titleEN: "Desserts",
         image: image
     },
     {
         id: 5,
-        title: "Fast Food",
+        titleAZ: "Fast Food",
+        titleEN: "Fast Food",
         image: image
     },
     {
         id: 6,
-        title: "Pizza",
+        titleAZ: "Pizza",
+        titleEN: "Pizza",
         image: image
     },
     {
         id: 7,
-        title: "İçkilər",
+        titleAZ: "İçkilər",
+        titleEN: "Drinks",
         image: image
     },
     {
         id: 8,
-        title: "Dondurma",
+        titleAZ: "Dondurma",
+        titleEN: "Ice Cream",
         image: image
     },
     {
         id: 9,
-        title: "Salatlar",
+        titleAZ: "Salatlar",
+        titleEN: "Salads",
         image: image
     },
     {
         id: 10,
-        title: "Qəlyanaltılar",
+        titleAZ: "Qəlyanaltılar",
+        titleEN: "Snacks",
         image: image
     },
 ];
