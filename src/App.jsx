@@ -5,6 +5,7 @@ import './assets/sass/style.scss'
 import Header from './components/Header'
 import Meals from './components/Meals'
 import { LANGUAGE } from './data/langugage'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -13,7 +14,7 @@ const App = () => {
     <div>
       <Header handleLanguage={setLanguage}/>
       <Meals selectedLanguage={language}/>
-      {/* <Footer/>  */}
+      <Footer/> 
     </div>
   )
 }

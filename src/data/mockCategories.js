@@ -1,4 +1,5 @@
 import image from '../assets/testImg/category.jpg';
+import qelyanaltiIcon from '../assets/testImg/qelyanalti-icon.jpg';
 
 export const mockCategories = [
     {
@@ -11,7 +12,7 @@ export const mockCategories = [
         id: 2,
         titleAZ: "Qəlyanaltılar",
         titleEN: "Snacks",
-        image: image
+        image: qelyanaltiIcon
     },
     {
         id: 3,
