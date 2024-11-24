@@ -16,24 +16,24 @@ const Footer = () => {
         <div className="col-6 col-md-3">
         <div className="social-card">
                 <div className="icon"><FaPhoneAlt /></div>
-                <p className="social-text">+994123456789</p>
+                <p className="social-text">+994503020203</p>
             </div>
             </div>
             <div className="col-6 col-md-3">
             <div className="social-card">
                 <div className="icon"><FaInstagram  /></div>
-                <a href="" className="social-text">Instagram</a>
+                <a href="https://www.instagram.com/butabaku_restaurant" className="social-text">Instagram</a>
             </div> 
             </div>
             </div>
         </div>
         <div className="location">
                 <h5>Ünvan</h5>
-                <p>Filan filan yer</p>
+                <p>Rüstəm Rüstəmov 2524,Baku</p>
             </div>
 
         <div className="last-footer">
-        © Buta Baku
+        ©2024 Buta Baku
         </div>
 
     </div>

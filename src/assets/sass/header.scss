@@ -1,7 +1,7 @@
   header {
     width: 100%;
     background-color: var(--header-bg);
-    padding: 3vh 0;
+    padding: 2vh 0;
     box-shadow: 0 3vh 4px var(--shadow-color);
     .container {
       .header-box {
@@ -27,9 +27,9 @@
               font-weight: bolder;
             }
             .dropdown-menu {
-              background-color: var(--header-bg);
+              // background-color: var(--header-bg);
               .active-lang {
-                background-color: var(--primary-color);
+                // background-color: var(--primary-color);
                 a {
                   color: var(--text-color-light);
                 }

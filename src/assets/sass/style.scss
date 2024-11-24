@@ -5,12 +5,12 @@
 @import "./meals.scss";
 
 :root {
-    --header-bg: #030303;
-    --primary-color: #b40205;
-    --text-color-light: #fff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --secondary-bg: #1a1a1a;
-    --card-bg-color: #2a2a2a;
+    --header-bg: white;
+    --primary-color: gray;
+    --text-color-light: rgb(0, 0, 0);
+    --shadow-color: rgba(235, 235, 235, 0.1);
+    --secondary-bg: rgb(252, 252, 252);
+    --card-bg-color: white;
     --text-color-gold: #8E663C;
 }
 

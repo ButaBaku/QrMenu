@@ -31,6 +31,7 @@
                 font-weight: 600;
             }
             .food-card-price{
+                color: white !important;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -43,7 +44,7 @@
             }
         }
         .food-card-desc{
-            color: #F1D4A4;
+            color: rgb(59, 59, 59);
         }
 
     }
