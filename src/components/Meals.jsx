@@ -90,7 +90,6 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
 })}
         
 
-
     </div>
   )
 }
