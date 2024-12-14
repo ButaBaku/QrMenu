@@ -1,14 +1,22 @@
 import React, { useState } from 'react'
 
-import logo from '../assets/img/logo_dark.jpg'
+import logo from '../assets/img/logo-cream.jpeg'
+import bg_photo from '../assets/img/buta-baku-bg.jpeg'
 import { LANGUAGE, LANGUAGE_LIST } from '../data/langugage';
 
 const Header = ({handleLanguage}) => {
 
+    const [backgroundImage, setBackgroundImage] = useState(bg_photo);
     const [language , setLanguage] = useState(LANGUAGE.DEFAULT);
-
   return (
-    <header>
+    <header
+  style={{
+    backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
+    backgroundColor: "#ffffff",
+    backgroundSize: "cover",
+    backgroundPosition: "center"
+    }}
+>
         <div className="container">
             <div className="header-box">
                 <div className="logo-box">

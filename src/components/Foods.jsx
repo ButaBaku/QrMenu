@@ -8,7 +8,6 @@ const Foods = ({language , categoryTitle="" , data=[]}) => {
         <div className="container">
             <InfoText text={categoryTitle} />
             <div className="row">
-
               {
                 data.map((item)=>(
                   <FoodCard 

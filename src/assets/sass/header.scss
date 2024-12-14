@@ -1,7 +1,7 @@
   header {
     width: 100%;
-    background-color: var(--header-bg);
-    padding: 2vh 0;
+    // background-color: var(--header-bg);
+    padding: 4vh 0;
     box-shadow: 0 3vh 4px var(--shadow-color);
     .container {
       .header-box {
@@ -11,11 +11,20 @@
         justify-content: space-between;
         flex-wrap: wrap;
         .logo-box {
-          width: 20%;
+          width: 180px;
+          height: 100px;
+          background-color:white !important;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
           max-width: 100px;
-          img {
-            width: 100%;
-          }
+            img {
+                width: 80%;
+                height: 80%;
+                border-radius: 50%;
+              } 
+          
         }
   
         .language-box {
@@ -48,3 +57,9 @@
     }
   }
   
+
+  .language-box .dropdown .btn {
+    background-color: white;
+    color: black; /* Optional: Adjust the text color for contrast */
+    border: 1px solid rgb(191, 165, 21); /* Optional: Add a border for better visibility */
+  }
