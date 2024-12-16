@@ -77,7 +77,7 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
   return (
     <div className='meals'>
         <div className="container">
-            <div className="services d-flex">
+            {/* <div className="services d-flex">
 
                 <div className="location">
                 <IoLocation className="location-icon"/>
@@ -94,7 +94,7 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
               />
                 </div>
 
-            </div>
+            </div> */}
             <div className="service-pay">
             <InfoText text={info[`title${selectedLanguage}`]} />
                 </div>
