@@ -1,18 +1,23 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
-import logo from '../assets/img/logo-cream.jpeg'
-import bg_photo from '../assets/img/buta-baku-bg.jpeg'
+import bgImage from "../assets/img/logo_dark.jpg"
 import { LANGUAGE, LANGUAGE_LIST } from '../data/langugage';
+import { DataContext } from '../DataProvider';
 
 const Header = ({handleLanguage}) => {
 
-    const [backgroundImage, setBackgroundImage] = useState(bg_photo);
     const [language , setLanguage] = useState(LANGUAGE.DEFAULT);
-  return (
-    <header
+    const { info, loading, error } = useContext(DataContext);
+    const [backgroundImage, setBackgroundImage] = useState(info.backgroundImage);
+ 
+    console.log(info);
+    console.log("backgroundImage",backgroundImage);
+    
+    return (
+    <header 
   style={{
-    backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
-    backgroundColor: "#ffffff",
+    backgroundImage: `url('http://164.92.190.92/info/1734292074439-618760612-WhatsApp%20Image%202024-12-15%20at%2023.45.43.jpeg')`,
+    // backgroundColor: "#ffffff",
     backgroundSize: "cover",
     backgroundPosition: "center"
     }}
@@ -20,7 +25,7 @@ const Header = ({handleLanguage}) => {
         <div className="container">
             <div className="header-box">
                 <div className="logo-box">
-                    <img src={logo} alt="" />
+                    <img src={info.logo} alt="" />
                 </div>
 
                 <div className="language-box">

@@ -11,7 +11,7 @@ import loader from "./assets/img/cooking_loader_2.gif";
 
 const App = () => {
   const [language, setLanguage] = useState(LANGUAGE.DEFAULT);
-  const { categories, loading, error } = useContext(DataContext);
+  const { categories,subcategories,products,info, loading, error } = useContext(DataContext);
 
   if (loading) {
     return (
@@ -33,7 +33,7 @@ const App = () => {
     <div>
       <Header handleLanguage={setLanguage} />
       <Meals selectedLanguage={language} />
-      <Footer />
+      <Footer selectedLanguage={language} />
     </div>
   );
 };

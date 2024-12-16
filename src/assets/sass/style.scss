@@ -27,3 +27,31 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 9999;
 }
+
+.my-test {
+    width: 600px; /* Set the width of the div */
+    height: 400px; /* Set the height of the div */
+    background-image: 
+    // url('http://164.92.190.92/info/1734292074439-618760612-WhatsApp%20Image%202024-12-15%20at%2023.45.43.jpeg'), 
+                      
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20650%20300%22%3E%3Cpath%20d%3D%22M%20100%20300%20Q%20150%20350%20200%20300%20Q%20300%20250%20350%20300%20Q%20400%20350%20400%20300%20C%20450%20350%20500%20250%20650%20300%22%2F%3E%3C%2Fsvg%3E");
+    background-size: cover; /* Ensure the background covers the entire div */
+    background-repeat: no-repeat; /* Prevent repeating the background */
+    background-position: center; /* Center the background */
+  }
+  
+
+//   .svg-background-container{
+//     background-image: url(http://164.92.190.92/info/1734292074439-618760612-WhatsApp%20Image%202024-12-15%20at%2023.45.43.jpeg);
+//     background-size: cover;
+//     background-position: center;
+//     width: 500px;
+//     height: 300px;
+//   }
+
+//   .my-svg{
+//     border: 3px solid blue;
+//     // background: red;
+//     width: 100%;
+//     height: 30vh;
+//   }

@@ -3,6 +3,7 @@ import FoodCard from './FoodCard'
 import InfoText from './InfoText'
 
 const Foods = ({language , categoryTitle="" , data=[]}) => {
+  console.log("data.ingridientsAZ",data.ingridientsAZ);
   return (
     <div className="foods" id='meal-list'>
         <div className="container">
@@ -15,7 +16,7 @@ const Foods = ({language , categoryTitle="" , data=[]}) => {
                     img={item.image} 
                     name={item[`title${language}`]} 
                     price={item.price} 
-                    desc={item[`desc${language}`]}
+                    desc={item.ingridientsAZ}
                   />
                 ))
               }
