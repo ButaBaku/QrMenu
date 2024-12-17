@@ -94,24 +94,7 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
                 </div>
 
             </div> */}
-            <div className="service-pay">
-            <InfoText text={info[`title${selectedLanguage}`]} />
-                </div>
 
-                <div className="socials">
-        
-                    <div className="social-center">
-                    <div className="social-card">
-                <div className="icon"><FaPhoneAlt /></div>
-                <p className="social-text">{info.phoneNumbers[0]}</p>
-            </div>
-            
-            <div className="social-card">
-                <div className="icon"><FaInstagram  /></div>
-                <a href={info.instagram} className="social-text">Instagram</a>
-            </div> 
-                    </div>
-            </div>
             <div className="category-box">
                 <div className="category-list">
                     {categories.map((data , c)=>(

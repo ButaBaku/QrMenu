@@ -180,12 +180,14 @@ header {
     }
 
     .header-info {
-      padding-left: 150px;
+      margin-left: -130px;
+      padding-left: 280px;
       padding-right: 20px;
       text-align: center;
-      height: 420px;
+      margin-top: -130px;
+      height: 330px;
       font-size: 1.2rem;
-      padding-top: 210px;
+      padding-top: 170px;
       clip-path: path(
         //   "M 0 350 Q 50 200 150 150 Q 250 100 450 100 Q 650 100 800 100 L 800 350 Z "
         "M 0 420 Q 50 200 200 200 Q 200 200 200 200 Q 300 200 350 150 Q 400 100 500 100 L 7000 100 L 7000 420 Z"
