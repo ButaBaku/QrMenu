@@ -1,21 +1,23 @@
 import { useContext, useState } from "react";
 
-import bgImage from "../assets/img/logo_dark.jpg";
 import { LANGUAGE, LANGUAGE_LIST } from "../data/langugage";
 import { DataContext } from "../DataProvider";
 
-const Header = ({ handleLanguage }) => {
+const Header = ({ handleLanguage , tranferDataFunc }) => {
   const [language, setLanguage] = useState(LANGUAGE.DEFAULT);
   const { info, loading, error } = useContext(DataContext);
   const [backgroundImage, setBackgroundImage] = useState(info.backgroundImage);
 
-  console.log(info);
-  console.log("backgroundImage", backgroundImage);
+
+  const handleSearchChange = (e) => {
+    tranferDataFunc(e.target.value)
+  };
+  
 
   return (
     <header
       style={{
-        backgroundImage: `url('http://164.92.190.92/info/1734292074439-618760612-WhatsApp%20Image%202024-12-15%20at%2023.45.43.jpeg')`,
+        backgroundImage: `url('${info.backgroundImage}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -31,8 +33,7 @@ const Header = ({ handleLanguage }) => {
       <div className="header-info">
         <div className="container">
           <div>
-            <p>Servis haqqı: Kabinetlər və zallar 10%,</p>
-            <p>Şouproqram 15%</p>
+            <p>{info[`title${language}`]}</p>
             <div className="social-search">
               <div style={{ display: "flex", gap: 10 }} className="social-box">
                 <a href="#" target="_blank" rel="noreferrer">
@@ -69,7 +70,7 @@ const Header = ({ handleLanguage }) => {
                   type="text"
                   placeholder="Search"
                   className="search-input"
-                  //   onChange={handleSearchChange}
+                    onChange={handleSearchChange}
                 />
 
                 <div className="search-icon">

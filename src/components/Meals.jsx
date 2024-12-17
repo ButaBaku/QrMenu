@@ -1,163 +1,64 @@
-import React, { useContext, useRef, useState } from 'react'
-import InfoText from './InfoText'
-import CategoryCard from './CategoryCard'
-import Foods from './Foods';
-import { LANGUAGE } from '../data/langugage';
-import { IoLocation } from "react-icons/io5";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { DataContext } from '../DataProvider';
-import SearchCards from './SearchCards';
-const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
+import React, { useContext, useMemo, useRef, useState } from "react";
+import CategoryCard from "./CategoryCard";
+import Foods from "./Foods";
+import { LANGUAGE } from "../data/langugage";
+import { DataContext } from "../DataProvider";
 
 
+const Meals = ({ selectedLanguage = LANGUAGE.AZ, inputValue }) => {
 
-    const { categories,subcategories,products,info, loading, error } = useContext(DataContext);
-    const [selectedCategory , setSelectedCategory] = useState(categories[0]);
+    const defineCurrentSubCategories=(thisCategory)=>{
+        return subcategories.filter((i)=> i.categoryId == thisCategory.id);
+    }
 
-    const [searchedSubCategory,setSearchedSubCategory] = useState();
-    const [searchedProduct,setSearchedProduct] = useState([]);
+    const { categories, subcategories, products, info, loading, error } = useContext(DataContext);
+
+    //Defaults
+    const [selectedCategory, setSelectedCategory] = useState(categories[0] ? categories[0] : []);
+    const [selectedSubCategories , setSelectedSubCategories] = useState(defineCurrentSubCategories(categories[0]));
     
-    const [isSearch , setIsSearch] = useState(false);
+  const handleChangeCategory = (currentCategory) => {    
+    setSelectedCategory(currentCategory);
+    const currentSubCategories = currentCategory.subCategories;
+    setSelectedSubCategories(defineCurrentSubCategories(currentCategory));  
+};
 
-    console.log("subcategories",subcategories);
-    console.log("products",products);
 
-    const handleSearchChange = (e) => {
+  
 
-
-        if(e.target.value.length>0){
-            console.log("daxil oldu");
-            setIsSearch(true)
-            if(selectedLanguage=="AZ"){
-                console.log("az daxil oldu");
-                console.log(e.target.value);
-                const filteredSubcategories = subcategories.filter(sub => sub.titleAZ.toLowerCase().includes(e.target.value.toLowerCase()));
-                console.log("filteredSubcategories",filteredSubcategories);                
-                const filteredProducts = products.filter(product => product.titleAZ.toLowerCase().includes(e.target.value.toLowerCase()));
-                console.log("filteredProducts",filteredProducts);
-                
-                console.log("searchedSubCategory before set AAA",searchedSubCategory);
-
-                setSearchedSubCategory(filteredSubcategories);
-
-                console.log("getdi??",filteredSubcategories);
-                setSearchedProduct(filteredProducts);
-                console.log("searchedSubCategory  after AAA",searchedSubCategory);
-                console.log("setSearchedProduct AAA",searchedProduct);
-            }
-            else{
-                console.log("end daxil oldu");
-
-                var filteredSubcategories = subcategories.filter(sub => sub.titleEN.toLowerCase().includes(e.target.value.toLowerCase()));
-                var filteredProducts = subcategories.filter(product => product.titleEN.toLowerCase().includes(e.target.value.toLowerCase()));
-
-                setSearchedSubCategory(filteredSubcategories);
-                setSearchedProduct(filteredProducts);
-            console.log("searchedSubCategory AAA",searchedSubCategory);
-            console.log("setSearchedProduct AAA",setSearchedProduct);
-                
-            }
-
-            // console.log("searchedSubCategory AAA",searchedSubCategory);
-            
-        }else{
-            setIsSearch(false)
-        }
-      };
-
-    const handleChangeCategory=(e)=>{
-        setSelectedCategory(e);
-        document.getElementById('meal-list').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    } 
-
+  
   return (
-    <div className='meals'>
-        <div className="container">
-            {/* <div className="services d-flex">
-
-                <div className="location">
-                <IoLocation className="location-icon"/>
-                <a href="https://www.google.com/maps?q=40.4120744,49.9576629" target="_blank">
-  {selectedLanguage == "AZ" ? `Ünvan: ${info.addressAZ}` : `Address: ${info.addressEN}`}
-</a>
-
-
-            <input
-                className='search-input'
-                type="text"
-                placeholder="Search"
-                onChange={handleSearchChange}
-                // ref={searchInputRef}
+    <div className="meals">
+      <div className="container">
+        <div className="category-box">
+          <div className="category-list">
+            {categories.map((data, c) => (
+              <CategoryCard
+                key={c}
+                language={selectedLanguage}
+                data={data}
+                handleState={handleChangeCategory}
+                active={selectedCategory.id == data.id}
               />
-                </div>
-
-            </div> */}
-            <div className="service-pay">
-            <InfoText text={info[`title${selectedLanguage}`]} />
-                </div>
-
-                <div className="socials">
-        
-                    <div className="social-center">
-                    <div className="social-card">
-                <div className="icon"><FaPhoneAlt /></div>
-                <p className="social-text">{info.phoneNumbers[0]}</p>
-            </div>
-            
-            <div className="social-card">
-                <div className="icon"><FaInstagram  /></div>
-                <a href={info.instagram} className="social-text">Instagram</a>
-            </div> 
-                    </div>
-            </div>
-            <div className="category-box">
-                <div className="category-list">
-                    {categories.map((data , c)=>(
-                            <CategoryCard 
-                                key={c}
-                                language={selectedLanguage}
-                                data={data}  
-                                handleState={handleChangeCategory}
-                                active={selectedCategory.id == data.id}
-                            />
-                        ))
-                    }                    
-                </div>
-            </div>
-            
+            ))}
+          </div>
         </div>
-        <div className="margin-top"></div>
-
-        {selectedCategory.subCategories.map((item, i) => {
-  return (
-    <div key={i}>
-      <p>{item.title}</p>
-      {isSearch?<div className="row">
-
-        <SearchCards searchedSubCategoryData={searchedSubCategory} searchedProductData={searchedProduct} language={selectedLanguage} />
-
       </div>
-      
-      :
 
-      <Foods
-        language={selectedLanguage}
-        categoryTitle={item[`title${selectedLanguage}`]}
-        data={products.filter(p=>p.subCategoryId==item.id)}
-      />
-      }
-      
+      {selectedSubCategories.map((item, i) => {        
+        return (
+          <div key={i}>
+            <p>{item.title}</p>
+            <Foods
+              language={selectedLanguage}
+              categoryTitle={item[`title${selectedLanguage}`]}
+              data={item.products}
+            />
+          </div>
+        );
+      })}
     </div>
   );
-})}
-        
+};
 
-    </div>
-  )
-}
-
-export default Meals
+export default Meals;
