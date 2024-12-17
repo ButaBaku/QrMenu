@@ -6,18 +6,20 @@ const SearchCards = ({searchedSubCategoryData,searchedProductData,language}) => 
     <div>
         <InfoText text={language=="AZ"?"Tapılan kateqoriyalar":"Finded categories"} ></InfoText>
         {searchedSubCategoryData.map((i,item)=>{
-            return 
-            <div key={i} id={`subcategory-${i}`} className="subcategory-card">
-                {item[`title${selectedLanguage}`]}
-            </div>
+            return(
+              <div key={i} id={`subcategory-${i}`} className="subcategory-card">
+                  {item[`title${selectedLanguage}`]}
+              </div>
+            ) 
         })}
     
     <InfoText text={language=="AZ"?"Tapılan məhsullar":"Finded products"} ></InfoText>
         {searchedProductData.map((i,item)=>{
-            return 
-            <div key={i} id={`product-${i}`} className="product-card">
+            return (
+              <div key={i} id={`product-${i}`} className="product-card">
                 {item[`title${selectedLanguage}`]}
-            </div>
+              </div>
+            )
         })}
 
     </div>

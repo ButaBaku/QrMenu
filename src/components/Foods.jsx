@@ -3,7 +3,7 @@ import FoodCard from './FoodCard'
 import InfoText from './InfoText'
 
 const Foods = ({language , categoryTitle="" , data=[]}) => {
-  console.log("data.ingridientsAZ",data.ingridientsAZ);
+
   return (
     <div className="foods" id='meal-list'>
         <div className="container">

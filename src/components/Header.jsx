@@ -1,6 +1,4 @@
 import { useContext, useState } from "react";
-
-import bgImage from "../assets/img/logo_dark.jpg";
 import { LANGUAGE, LANGUAGE_LIST } from "../data/langugage";
 import { DataContext } from "../DataProvider";
 
@@ -15,7 +13,7 @@ const Header = ({ handleLanguage }) => {
   return (
     <header
       style={{
-        backgroundImage: `url('http://164.92.190.92/info/1734292074439-618760612-WhatsApp%20Image%202024-12-15%20at%2023.45.43.jpeg')`,
+        backgroundImage: `url('${info.backgroundImage}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -31,16 +29,20 @@ const Header = ({ handleLanguage }) => {
       <div className="header-info">
         <div className="container">
           <div>
-            <p>Servis haqqı: Kabinetlər və zallar 10%,</p>
-            <p>Şouproqram 15%</p>
+            <p>Servis haqqı 10%,</p>
             <div className="social-search">
               <div style={{ display: "flex", gap: 10 }} className="social-box">
-                <a href="#" target="_blank" rel="noreferrer">
+                
+                <a 
+                  href={`tel:${info.phoneNumber}`}
+                  target="_blank" 
+                  rel="noreferrer"
+                >
                   <i className="fa fa-phone"></i>
                 </a>
 
                 <a
-                  href="https://api.whatsapp.com/message/6OMO3MJC4FHQD1"
+                  href={`https://wa.me//${info.whatsapp}`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -48,18 +50,26 @@ const Header = ({ handleLanguage }) => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/butabaku_restaurant/"
+                  href={info.instagram}
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fab fa-instagram"></i>
                 </a>
 
-                <a href="#" target="_blank" rel="noreferrer">
+                <a 
+                  href={info.tiktok} 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
                   <i className="fab fa-tiktok"></i>
                 </a>
 
-                <a href="#" target="_blank" rel="noreferrer">
+                <a 
+                  href={info.youtube} 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
                   <i className="fab fa-youtube"></i>
                 </a>
               </div>

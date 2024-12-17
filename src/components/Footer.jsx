@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
-import { FaFacebookF } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { FaPhoneSquareAlt } from "react-icons/fa";
 import { DataContext } from "../DataProvider";
 const Footer = ({ selectedLanguage = LANGUAGE.AZ }) => {
   const { info, loading, error } = useContext(DataContext);

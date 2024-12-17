@@ -3,7 +3,6 @@ import InfoText from './InfoText'
 import CategoryCard from './CategoryCard'
 import Foods from './Foods';
 import { LANGUAGE } from '../data/langugage';
-import { IoLocation } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { DataContext } from '../DataProvider';

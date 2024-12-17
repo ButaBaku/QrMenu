@@ -1,8 +1,8 @@
-@import "./foods.scss";
-@import "./footer.scss";
-@import "./header.scss";
-@import "./infoText.scss";
-@import "./meals.scss";
+@use "./foods.scss";
+@use "./footer.scss";
+@use "./header.scss";
+@use "./infoText.scss";
+@use "./meals.scss";
 
 :root {
     --header-bg: white;
