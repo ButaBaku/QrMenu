@@ -25,7 +25,7 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
     const handleSearchChange = (e) => {
 
 
-        if(e.target.value.length>3){
+        if(e.target.value.length>0){
             console.log("daxil oldu");
             setIsSearch(true)
             if(selectedLanguage=="AZ"){
@@ -86,6 +86,7 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
 
 
             <input
+                className='search-input'
                 type="text"
                 placeholder="Search"
                 onChange={handleSearchChange}
@@ -111,12 +112,17 @@ const Meals = ({selectedLanguage = LANGUAGE.AZ}) => {
             </div>
             
         </div>
+        <div className="margin-top"></div>
 
         {selectedCategory.subCategories.map((item, i) => {
   return (
     <div key={i}>
       <p>{item.title}</p>
-      {isSearch?<SearchCards searchedSubCategoryData={searchedSubCategory} searchedProductData={searchedProduct} language={selectedLanguage} />
+      {isSearch?<div className="row">
+
+        <SearchCards searchedSubCategoryData={searchedSubCategory} searchedProductData={searchedProduct} language={selectedLanguage} />
+
+      </div>
       
       :
 

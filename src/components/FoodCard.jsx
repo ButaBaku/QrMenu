@@ -1,9 +1,9 @@
 import React from 'react'
 import blankImage from '../assets/img/blankImage.jpg'
 
-const FoodCard = ({img,name,price,desc}) => {
+const FoodCard = ({index,img,name,price,desc}) => {
   return (
-    <div className="col-12 col-md-4">
+    <div id={`product-${index}`} className="col-12 col-md-4">
       <div className="card food-card">
         <img src={img || blankImage} className="card-img-top food-img" alt="..." />
         <div className="card-body food-card-body">
