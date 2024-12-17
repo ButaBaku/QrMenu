@@ -4,10 +4,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { DataContext } from '../DataProvider';
-const Footer = ({selectedLanguage = LANGUAGE.AZ}) => {
+const Footer = ({language}) => {
 
   const { info, loading, error } = useContext(DataContext);
 
+  const currentYear = new Date().getFullYear();
   return (
     <div className="bg-brown">
     <div className="container">
@@ -32,12 +33,12 @@ const Footer = ({selectedLanguage = LANGUAGE.AZ}) => {
             </div>
         </div>
         <div className="location">
-                <h5>{selectedLanguage == "AZ" ? `Ünvan` : `Address`}</h5>
-                <p>{selectedLanguage == "AZ" ? info.addressAZ : info.addressEN}</p>
+                <h5>{language == "AZ" ? `Ünvan` : `Address`}</h5>
+                <p>{language == "AZ" ? info.addressAZ : info.addressEN}</p>
             </div>
 
         <div className="last-footer">
-        ©2024 Buta Baku
+        ©{currentYear} Buta Baku
         </div>
 
     </div>

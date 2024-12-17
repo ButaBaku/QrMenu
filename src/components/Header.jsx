@@ -1,18 +1,20 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { LANGUAGE, LANGUAGE_LIST } from "../data/langugage";
 import { DataContext } from "../DataProvider";
 
-const Header = ({ handleLanguage , tranferDataFunc }) => {
-  const [language, setLanguage] = useState(LANGUAGE.DEFAULT);
+const Header = ({ language , tranferDataFunc }) => {
   const { info, loading, error } = useContext(DataContext);
   const [backgroundImage, setBackgroundImage] = useState(info.backgroundImage);
 
 
   const handleSearchChange = (e) => {
-    tranferDataFunc(e.target.value)
+    if(e.target.value){
+      tranferDataFunc(e.target.value)
+    }else{
+      tranferDataFunc(false)
+    }
   };
-  
 
   return (
     <header
@@ -29,7 +31,16 @@ const Header = ({ handleLanguage , tranferDataFunc }) => {
           </div>
         </div>
       </div>
-
+      
+      <button className="btn lang-btn" 
+        onClick={()=>{
+          localStorage.setItem("lang",localStorage.getItem("lang")==LANGUAGE.AZ ? LANGUAGE.EN : LANGUAGE.AZ );
+          window.location.reload()
+        }}
+      >
+        {localStorage.getItem("lang")==LANGUAGE.AZ? LANGUAGE.EN : LANGUAGE.AZ}
+      </button>
+          
       <div className="header-info">
         <div className="container">
           <div>

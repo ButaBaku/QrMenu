@@ -3,15 +3,19 @@ import CategoryCard from "./CategoryCard";
 import Foods from "./Foods";
 import { LANGUAGE } from "../data/langugage";
 import { DataContext } from "../DataProvider";
+import FoodCard from "./FoodCard";
+import InfoText from "./InfoText";
 
 
-const Meals = ({ selectedLanguage = LANGUAGE.AZ, inputValue }) => {
+const Meals = ({ language, inputValue }) => {
 
     const defineCurrentSubCategories=(thisCategory)=>{
         return subcategories.filter((i)=> i.categoryId == thisCategory.id);
     }
 
-    const { categories, subcategories, products, info, loading, error } = useContext(DataContext);
+    const { categories, products , subcategories, info, loading, error } = useContext(DataContext);
+
+    const [searchProducts , setSearchProducts] = useState(products);    
 
     //Defaults
     const [selectedCategory, setSelectedCategory] = useState(categories[0] ? categories[0] : []);
@@ -35,7 +39,7 @@ const Meals = ({ selectedLanguage = LANGUAGE.AZ, inputValue }) => {
             {categories.map((data, c) => (
               <CategoryCard
                 key={c}
-                language={selectedLanguage}
+                language={language}
                 data={data}
                 handleState={handleChangeCategory}
                 active={selectedCategory.id == data.id}
@@ -44,19 +48,50 @@ const Meals = ({ selectedLanguage = LANGUAGE.AZ, inputValue }) => {
           </div>
         </div>
       </div>
+    
 
-      {selectedSubCategories.map((item, i) => {        
-        return (
-          <div key={i}>
-            <p>{item.title}</p>
-            <Foods
-              language={selectedLanguage}
-              categoryTitle={item[`title${selectedLanguage}`]}
-              data={item.products}
-            />
-          </div>
-        );
-      })}
+    {
+        !inputValue ?
+
+        <div>
+            {
+
+                selectedSubCategories.map((item, i) => {        
+                    return (
+                        <div key={i}>
+                        <p>{item.title}</p>
+                        <Foods
+                        language={language}
+                        categoryTitle={item[`title${language}`]}
+                        data={item.products}
+                        />
+                    </div>
+                    );
+                })
+            }
+        </div>
+
+          :
+        // Axtaris sistemi
+        
+        <div>
+            <InfoText text={language== LANGUAGE.AZ ? "Axtarış nəticəsində tapılanlar" : "Found products"} />
+            {
+                products.filter((i)=> i[`title${language}`].toLowerCase().includes(inputValue.toLowerCase()))
+                .map((item)=>(
+                    <FoodCard
+                        key={item.id}
+                        img={item.image} 
+                        name={item[`title${language}`]} 
+                        price={item.price} 
+                        desc={item.ingridientsAZ}
+                    />
+                ))
+            }
+        </div>
+
+
+    }
     </div>
   );
 };

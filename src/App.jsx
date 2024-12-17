@@ -10,9 +10,18 @@ import { DataContext, DataProvider } from './DataProvider';
 import loader from "./assets/img/cooking_loader_2.gif";
 
 const App = () => {
-  const [language, setLanguage] = useState(LANGUAGE.DEFAULT);
+  const [language, setLanguage] = useState();
   const { loading, error } = useContext(DataContext);
   const [isSearch,setIsSearch] = useState(false);
+
+  useEffect(() => {
+    if(localStorage.getItem("lang")){
+      setLanguage(localStorage.getItem("lang"));   
+    }else{
+      setLanguage(localStorage.setItem("lang" , LANGUAGE.DEFAULT));
+    }
+  
+  },[])
 
   const handleData =(e)=>{
     setIsSearch(e);
@@ -37,7 +46,7 @@ const App = () => {
   return (
     <div>
       <Header tranferDataFunc={handleData} handleLanguage={setLanguage} />
-      <Meals handleLanguage={language} inputValue={isSearch} />
+      <Meals language={language} inputValue={isSearch} />
       <Footer selectedLanguage={language} />
     </div>
   );
