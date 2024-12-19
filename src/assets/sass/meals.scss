@@ -13,7 +13,7 @@
           .category-item {
             // width: 20%;
             min-width: 60px;
-            margin: 8px;
+            margin: 5px;
             width: 25%;
             max-width: 100px;
             // border: 1px solid var(--text-color-gold);
@@ -32,7 +32,7 @@
                 // height: 20px;
                 overflow: hidden;
                 img{
-                    width: 60%;
+                    width: 50%;
                 }
             }
             .text-box {
@@ -44,7 +44,7 @@
                 flex-wrap: wrap;
             
                 .content-text {
-                  font-size: 12px;
+                  font-size: 11px;
                     text-align: center;
                     margin: 0;
                     padding: 0;
