@@ -9,7 +9,7 @@ const FoodCard = ({index,img,name,price,desc}) => {
         <div className="card-body food-card-body">
           <div className="head-body">
           <h5 className="card-title card-text food-card-name">{name}</h5>
-          <h5 className="card-title card-text food-card-price">{price}azn</h5>
+          <h5 className="card-title card-text food-card-price">{price}</h5>
           </div>
 
           <p className="card-text food-card-desc">{desc}</p>

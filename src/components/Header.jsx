@@ -1,12 +1,17 @@
-import { useContext, useEffect, useState } from "react";
-
-import { LANGUAGE, LANGUAGE_LIST } from "../data/langugage";
+import React, { useContext, useState } from "react";
+import { FaLocationDot, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { DataContext } from "../DataProvider";
+import { LANGUAGE } from "../data/langugage";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
-const Header = ({ language , tranferDataFunc }) => {
+const Header = ({ tranferDataFunc }) => {
   const { info, loading, error } = useContext(DataContext);
   const [backgroundImage, setBackgroundImage] = useState(info.backgroundImage);
-
+  const [logo, setLogo] = useState(info.logo);
+  const [lang, setLang] = useState(localStorage.getItem("lang"));
 
   const handleSearchChange = (e) => {
     if(e.target.value){
@@ -17,79 +22,116 @@ const Header = ({ language , tranferDataFunc }) => {
   };
 
   return (
-    <header
-      style={{
-        backgroundImage: `url('${info.backgroundImage}')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="container">
-        <div className="header-box">
-          <div className="logo-box">
-            <img src={info.logo} alt="" />
+    <header>
+      <div className="custom-design">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 800 325"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <pattern
+              id="bgImage"
+              patternUnits="userSpaceOnUse"
+              width="800"
+              height="325"
+            >
+              <image
+                href={backgroundImage}
+                x="0"
+                y="0"
+                width="800"
+                height="325"
+                preserveAspectRatio="xMidYMid slice"
+              />
+            </pattern>
+          </defs>
+          <path
+            d="M510,200 Q460,200 330,200 Q252,204 208,272 C180,312 132,324 72,324 C36,324 36,324 0,325 L0,0 L800,0 L800,200 L575,200 L330,200 Z"
+            fill="url(#bgImage)"
+          />
+        </svg>
+
+        <img className="logo-img" src={logo} alt="" />
+        <a
+          href="https://www.google.com/maps/place/40%C2%B024'43.5%22N+49%C2%B057'27.6%22E/@40.4120744,49.955088,17z/data=!3m1!4b1!4m4!3m3!8m2!3d40.4120744!4d49.9576629?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D"
+          className="location-part"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLocationDot className="location-icon" />
+          {lang == LANGUAGE.AZ ? "Ünvan:" : "Location:"}
+          {info[`address${lang.toUpperCase()}`].slice(0, 4)}...
+        </a>
+
+        <button
+          className="btn lang-btn"
+          onClick={() => {
+            localStorage.setItem(
+              "lang",
+              lang == LANGUAGE.AZ ? LANGUAGE.EN : LANGUAGE.AZ
+            );
+            window.location.reload();
+          }}
+        >
+          {lang == LANGUAGE.AZ ? LANGUAGE.EN : LANGUAGE.AZ}
+        </button>
+
+        <div className="social-parts">
+          <div className="service-pay">
+            <p>{info[`title${lang.toUpperCase()}`]}</p>
+          </div>
+          <div className="social-platforms">
+            <div className="social-icon">
+              <a href="tel:+1234567890" className="fa-icon">
+                <FaPhoneAlt />
+              </a>
+            </div>
+            <div className="social-icon">
+              <a
+                href={`https://wa.me/${info.phoneNumbers[0]}`}
+                className="fa-icon fa-icon-whatsapp"
+              >
+                <BsWhatsapp />
+              </a>
+            </div>
+            <div className="social-icon">
+              <a
+                href={`${info.instagram}`}
+                className="fa-icon fa-icon-whatsapp"
+              >
+                <BsInstagram />
+              </a>
+            </div>
+            <div className="social-icon">
+              <a
+                href={`${info.tiktok}`}
+                className="fa-icon fa-icon-whatsapp"
+              >
+                <FaTiktok />
+              </a>
+            </div>
+            <div className="social-icon">
+              <a
+                href={`${info.youtube}`}
+                className="fa-icon fa-icon-whatsapp"
+              >
+                <FaYoutube />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <button className="btn lang-btn" 
-        onClick={()=>{
-          localStorage.setItem("lang",localStorage.getItem("lang")==LANGUAGE.AZ ? LANGUAGE.EN : LANGUAGE.AZ );
-          window.location.reload()
-        }}
-      >
-        {localStorage.getItem("lang")==LANGUAGE.AZ? LANGUAGE.EN : LANGUAGE.AZ}
-      </button>
-          
-      <div className="header-info">
-        <div className="container">
-          <div>
-            <p>{info[`title${language}`]}</p>
-            <div className="social-search">
-              <div style={{ display: "flex", gap: 10 }} className="social-box">
-                <a href="#" target="_blank" rel="noreferrer">
-                  <i className="fa fa-phone"></i>
-                </a>
 
-                <a
-                  href="https://api.whatsapp.com/message/6OMO3MJC4FHQD1"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-whatsapp"></i>
-                </a>
-
-                <a
-                  href="https://www.instagram.com/butabaku_restaurant/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-
-                <a href="#" target="_blank" rel="noreferrer">
-                  <i className="fab fa-tiktok"></i>
-                </a>
-
-                <a href="#" target="_blank" rel="noreferrer">
-                  <i className="fab fa-youtube"></i>
-                </a>
-              </div>
-
-              <div className="search-box">
+        <div className="search-box">
                 <input
                   type="text"
-                  placeholder="Search"
+                  placeholder={lang == LANGUAGE.AZ ? "Axtar" : "Search"}
                   className="search-input"
                     onChange={handleSearchChange}
                 />
-
                 <div className="search-icon">
                   <i className="fas fa-search"></i>
                 </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </header>
