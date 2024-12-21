@@ -99,10 +99,17 @@ header{
         bottom: 0vh;
         right: 0;
         // border: 2px solid blue;
-
+        .service-pay{
+            width: 77% !important;
+            font-weight: 500;
+            font-size: 11px;
+            p{
+                line-height: 13px;
+            }
+        }
         .social-platforms{
             position: absolute;
-            bottom: 6px;
+            bottom: 0;
             left: 3vh;
             margin-left: -20px;
             // border: 2px solid blue;
@@ -138,7 +145,7 @@ header{
         // border: 2px solid red;
         height: 35%;
         position: absolute;
-        bottom: 2px;
+        bottom: 0;
         right: 10px;
         
         .search-input {
