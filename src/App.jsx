@@ -7,8 +7,8 @@ import Meals from './components/Meals';
 import { LANGUAGE } from './data/langugage';
 import Footer from './components/Footer';
 import { DataContext, DataProvider } from './DataProvider';
-import loader from "./assets/img/cooking_loader_2.gif";
-import noInternet from "./assets/img/no_internet.png";
+// import loader from "./assets/img/cooking_loader_2.gif";
+// import noInternet from "./assets/img/no_internet.png";
 
 const App = () => {
   const [language, setLanguage] = useState();
@@ -31,7 +31,7 @@ const App = () => {
   if (loading) {
     return (
       <div className="loading-screen">
-        <img src={loader} alt="" style={{"width":"100%"}}/>
+        <img src="https://raw.githubusercontent.com/ButaBaku/Qrmenutest/refs/heads/main/assets/cooking_loader_2-D9RXiLKt.gif" alt="" style={{"width":"100%"}}/>
       </div>
     );
   }
@@ -39,7 +39,7 @@ const App = () => {
   if (error) {
     return (
       <div className="loading-screen">
-      <img src={noInternet} alt="" style={{"width":"100%"}}/>
+      <img src="https://raw.githubusercontent.com/ButaBaku/Qrmenutest/refs/heads/main/assets/no_internet-CegZEc3g.png" alt="" style={{"width":"100%"}}/>
     </div>
     );
   }
