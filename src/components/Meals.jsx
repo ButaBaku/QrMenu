@@ -22,6 +22,7 @@ const Meals = ({ language, inputValue }) => {
     const [selectedSubCategories , setSelectedSubCategories] = useState(defineCurrentSubCategories(categories[0]));
     
   const handleChangeCategory = (currentCategory) => {    
+    inputValue=null;
     setSelectedCategory(currentCategory);
     const currentSubCategories = currentCategory.subCategories;
     setSelectedSubCategories(defineCurrentSubCategories(currentCategory));  

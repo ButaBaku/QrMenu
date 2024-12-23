@@ -83,7 +83,7 @@ const Header = ({ tranferDataFunc }) => {
           </div>
           <div className="social-platforms">
             <div className="social-icon">
-              <a href="tel:+1234567890" className="fa-icon">
+              <a href={`tel:+${info.phoneNumbers[0]}`} className="fa-icon">
                 <FaPhoneAlt />
               </a>
             </div>

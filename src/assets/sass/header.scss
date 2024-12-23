@@ -57,7 +57,7 @@ header{
         bottom: 8% !important;
         left: 2% !important;
         font-size: 10px;
-        color: wheat;
+        color: white !important;
         text-decoration: none;
         .location-icon{
             // width: 40px;
@@ -96,7 +96,7 @@ header{
         color: #8E663C;
         font-weight: 600;
         position: absolute;
-        bottom: 0vh;
+        bottom: -5px;
         right: 0;
         // border: 2px solid blue;
         .service-pay{
