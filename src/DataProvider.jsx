@@ -18,23 +18,23 @@ export const DataProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const categoryResponse = await fetch('http://164.92.190.92/api/v1/category');
-  if (!categoryResponse.ok) throw new Error('Failed to fetch categories');
+        const categoryResponse = await fetch('https://butabakurestaurant.az/api/v1/category');
+  if (!categoryResponse.ok) console.log('Failed to fetch categories');
   const categoryData = await categoryResponse.json();
   setCategories(categoryData);
 
-  const subcategoryResponse = await fetch('http://164.92.190.92/api/v1/subcategory');
-  if (!subcategoryResponse.ok) throw new Error('Failed to fetch subcategories');
+  const subcategoryResponse = await fetch('https://butabakurestaurant.az/api/v1/subcategory');
+  if (!subcategoryResponse.ok) console.log('Failed to fetch subcategories');
   const subcategoryData = await subcategoryResponse.json();
   setSubcategories(subcategoryData);
 
-  const productResponse = await fetch('http://164.92.190.92/api/v1/product');
-  if (!productResponse.ok) throw new Error('Failed to fetch products');
+  const productResponse = await fetch('https://butabakurestaurant.az/api/v1/product');
+  if (!productResponse.ok) console.log('Failed to fetch products');
   const productData = await productResponse.json();
   setProducts(productData);
 
-  const infoResponse = await fetch('http://164.92.190.92/api/v1/info');
-  if (!infoResponse.ok) throw new Error('Failed to fetch info');
+  const infoResponse = await fetch('https://butabakurestaurant.az/api/v1/info');
+  if (!infoResponse.ok) console.log('Failed to fetch info');
   const infoData = await infoResponse.json();
   setInfo(infoData);
 
@@ -49,8 +49,8 @@ export const DataProvider = ({ children }) => {
         setInfo(infoData);
 
       } catch (err) {
-        console.log(err.message);
-        setError(err.message);
+        // console.log(err.message);
+        // setError(err.message);
       } finally {
         setLoading(false);
       }

@@ -8,6 +8,7 @@ import { LANGUAGE } from './data/langugage';
 import Footer from './components/Footer';
 import { DataContext, DataProvider } from './DataProvider';
 import loader from "./assets/img/cooking_loader_2.gif";
+import noInternet from "./assets/img/no_internet.png";
 
 const App = () => {
   const [language, setLanguage] = useState();
@@ -37,9 +38,9 @@ const App = () => {
 
   if (error) {
     return (
-      <div className="error-screen">
-        <h2>Internetə qoşulun</h2>
-      </div>
+      <div className="loading-screen">
+      <img src={noInternet} alt="" style={{"width":"100%"}}/>
+    </div>
     );
   }
 
