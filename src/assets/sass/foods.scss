@@ -13,8 +13,10 @@
     color: var(--text-color-light);
 
     .food-img{
+        width: 100%; 
         // width: 444px;
         height: 230px;
+        object-fit: cover;
         border-radius: 20px !important;   
     }
     .food-card-body{

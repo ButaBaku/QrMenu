@@ -1,10 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaLocationDot, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { DataContext } from "../DataProvider";
 import { LANGUAGE } from "../data/langugage";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const Header = ({ tranferDataFunc }) => {
@@ -12,10 +10,12 @@ const Header = ({ tranferDataFunc }) => {
   const [backgroundImage, setBackgroundImage] = useState(info.backgroundImage);
   const [logo, setLogo] = useState(info.logo);
   const [lang, setLang] = useState(localStorage.getItem("lang"));
+  const searchInput = useRef();
 
-  const handleSearchChange = (e) => {
-    if(e.target.value){
-      tranferDataFunc(e.target.value)
+  const handleSearchChange = () => {
+    const value = searchInput.current.value;
+    if(value){
+      tranferDataFunc(value)
     }else{
       tranferDataFunc(false)
     }
@@ -127,9 +127,16 @@ const Header = ({ tranferDataFunc }) => {
                   type="text"
                   placeholder={lang == LANGUAGE.AZ ? "Axtar" : "Search"}
                   className="search-input"
-                    onChange={handleSearchChange}
+                  id="search-input"
+                  ref={searchInput}
+                  onChange={handleSearchChange}
                 />
-                <div className="search-icon">
+                <div className="search-icon" onClick={()=>{
+                  const contentBox = document.getElementById('menu-content-box'); 
+                  contentBox.scrollIntoView(({
+                    behavior: "smooth"
+                  }))                  
+                }}>
                   <i className="fas fa-search"></i>
                 </div>
         </div>

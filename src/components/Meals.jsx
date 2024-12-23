@@ -50,49 +50,53 @@ const Meals = ({ language, inputValue }) => {
         </div>
       </div>
     
+    
+      <div id="menu-content-box">
 
-    {
-        !inputValue ?
+        {
+            !inputValue ?
 
-        <div>
-            {
+            <div>
+                {
 
-                selectedSubCategories.map((item, i) => {        
-                    return (
-                        <div key={i}>
-                        <p>{item.title}</p>
-                        <Foods
-                        language={language}
-                        categoryTitle={item[`title${language}`]}
-                        data={item.products}
+                    selectedSubCategories.map((item, i) => {        
+                        return (
+                            <div key={i}>
+                            <p>{item.title}</p>
+                            <Foods
+                            language={language}
+                            categoryTitle={item[`title${language}`]}
+                            data={item.products}
+                            />
+                        </div>
+                        );
+                    })
+                }
+            </div>
+
+              :
+            // Axtaris sistemi
+            
+            <div>
+                <InfoText text={language== LANGUAGE.AZ ? "Axtarış nəticəsində tapılanlar" : "Found products"} />
+                {
+                    products.filter((i)=> i[`title${language}`].toLowerCase().includes(inputValue.toLowerCase()))
+                    .map((item)=>(
+                        <FoodCard
+                            key={item.id}
+                            img={item.image} 
+                            name={item[`title${language}`]} 
+                            price={item.price} 
+                            desc={item.ingridientsAZ}
                         />
-                    </div>
-                    );
-                })
-            }
-        </div>
-
-          :
-        // Axtaris sistemi
-        
-        <div>
-            <InfoText text={language== LANGUAGE.AZ ? "Axtarış nəticəsində tapılanlar" : "Found products"} />
-            {
-                products.filter((i)=> i[`title${language}`].toLowerCase().includes(inputValue.toLowerCase()))
-                .map((item)=>(
-                    <FoodCard
-                        key={item.id}
-                        img={item.image} 
-                        name={item[`title${language}`]} 
-                        price={item.price} 
-                        desc={item.ingridientsAZ}
-                    />
-                ))
-            }
-        </div>
+                    ))
+                }
+            </div>
 
 
-    }
+        }
+      </div>
+
     </div>
   );
 };
