@@ -16,7 +16,7 @@ const Foods = ({language , categoryTitle="" , data=[]}) => {
                     img={item.image} 
                     name={item[`title${language}`]} 
                     price={item.price} 
-                    desc={item.ingridientsAZ}
+                    desc={item[`desc${language}`]}
                   />
                 ))
               }

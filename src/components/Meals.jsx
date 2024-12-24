@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useRef, useState } from "react";
+import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
 import CategoryCard from "./CategoryCard";
 import Foods from "./Foods";
 import { LANGUAGE } from "../data/langugage";
@@ -9,6 +9,13 @@ import InfoText from "./InfoText";
 
 const Meals = ({ language, inputValue }) => {
 
+  const [input,setInput] =useState(inputValue);
+
+  useMemo(() => {
+    setInput(inputValue)
+  }, [inputValue])
+  
+  console.log("input",input);
     const defineCurrentSubCategories=(thisCategory)=>{
         return subcategories.filter((i)=> i.categoryId == thisCategory.id);
     }
@@ -22,7 +29,11 @@ const Meals = ({ language, inputValue }) => {
     const [selectedSubCategories , setSelectedSubCategories] = useState(defineCurrentSubCategories(categories[0]));
     
   const handleChangeCategory = (currentCategory) => {    
-    inputValue=null;
+    setInput(false);
+    const inputElement = document.getElementById("search-input");
+    if (inputElement) {
+        inputElement.value = "";
+    }
     setSelectedCategory(currentCategory);
     const currentSubCategories = currentCategory.subCategories;
     setSelectedSubCategories(defineCurrentSubCategories(currentCategory));  
@@ -54,7 +65,7 @@ const Meals = ({ language, inputValue }) => {
       <div id="menu-content-box">
 
         {
-            !inputValue ?
+            !input ?
 
             <div>
                 {
@@ -80,14 +91,14 @@ const Meals = ({ language, inputValue }) => {
             <div>
                 <InfoText text={language== LANGUAGE.AZ ? "Axtarış nəticəsində tapılanlar" : "Found products"} />
                 {
-                    products.filter((i)=> i[`title${language}`].toLowerCase().includes(inputValue.toLowerCase()))
+                    products.filter((i)=> i[`title${language}`].toLowerCase().includes(input.toLowerCase()))
                     .map((item)=>(
                         <FoodCard
                             key={item.id}
                             img={item.image} 
                             name={item[`title${language}`]} 
                             price={item.price} 
-                            desc={item.ingridientsAZ}
+                            desc={item[`desc${language}`]}
                         />
                     ))
                 }

@@ -81,7 +81,9 @@ const Header = ({ tranferDataFunc }) => {
           <div className="service-pay">
             <p>{info[`title${lang.toUpperCase()}`]}</p>
           </div>
-          <div className="social-platforms">
+          
+          <div className="header-down">
+            <div className="social-platforms">
             <div className="social-icon">
               <a href={`tel:+${info.phoneNumbers[0]}`} className="fa-icon">
                 <FaPhoneAlt />
@@ -120,9 +122,7 @@ const Header = ({ tranferDataFunc }) => {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="search-box">
+          <div className="search-box">
                 <input
                   type="text"
                   placeholder={lang == LANGUAGE.AZ ? "Axtar" : "Search"}
@@ -140,6 +140,11 @@ const Header = ({ tranferDataFunc }) => {
                   <i className="fas fa-search"></i>
                 </div>
         </div>
+        </div>
+
+        
+          </div>
+
       </div>
     </header>
   );

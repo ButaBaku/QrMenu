@@ -5,7 +5,7 @@ const FoodCard = ({index,img,name,price,desc}) => {
   return (
     <div id={`product-${index}`} className="col-12 col-md-4">
       <div className="card food-card">
-        <img src={img || "https://raw.githubusercontent.com/ButaBaku/Qrmenutest/refs/heads/main/images/blankImage.jpg"} className="card-img-top food-img" alt="..." />
+        <img src={img || "https://raw.githubusercontent.com/ButaBaku/QrMenu/refs/heads/main/images/blankImage.jpg"} className="card-img-top food-img" alt="..." />
         <div className="card-body food-card-body">
           <div className="head-body">
           <h5 className="card-title card-text food-card-name">{name}</h5>
