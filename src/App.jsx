@@ -37,7 +37,7 @@ const App = () => {
   if (error) {
     return (
       <div className="loading-screen">
-      <img src="thttps://raw.githubuserconten.com/ButaBaku/QrMenu/refs/heads/main/images/no_internet.png" alt="" style={{"width":"100%"}}/>
+      <img src="https://raw.githubuserconten.com/ButaBaku/QrMenu/refs/heads/main/images/no_internet.png" alt="" style={{"width":"100%"}}/>
     </div>
     );
   }
