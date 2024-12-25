@@ -19,22 +19,37 @@ const Footer = ({language}) => {
         
         <div className="row">
         <div className="col-6 col-md-3">
-        <div className="social-card">
+        
+        {info.phoneNumbers?.[0] &&
+        <div className="social-card mb-2 mt-3">
                 <div className="icon"><FaPhoneAlt /></div>
-                <p className="social-text">{info.phoneNumbers[0]}</p>
+                <p className="social-text">0{info.phoneNumbers[0].substring(3)}</p>
+            </div>}
+
+            {info.phoneNumbers?.[1] &&
+            <div className="social-card mb-2">
+                <div className="icon"><FaPhoneAlt /></div>
+                <p className="social-text">0{info.phoneNumbers[1].substring(3)}</p>
+            </div>}
+
+            {info.phoneNumbers?.[2] &&
+            <div className="social-card">
+                <div className="icon"><FaPhoneAlt /></div>
+                <p className="social-text">0{info.phoneNumbers[2].substring(3)}</p>
+            </div>}
+
             </div>
-            </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-3 my-auto">
             <div className="social-card">
                 <div className="icon"><FaInstagram  /></div>
                 <a href={info.instagram} className="social-text">Instagram</a>
-            </div> 
+            </div>
             </div>
             </div>
         </div>
         <div className="location">
-                <h5>{language == "AZ" ? `Ünvan` : `Address`}</h5>
-                <p>{language == "AZ" ? info.addressAZ : info.addressEN}</p>
+                <h5>{localStorage.getItem("lang") == "AZ" ? `Ünvan` : `Address`}</h5>
+                <p>{localStorage.getItem("lang") ? info.addressAZ : info.addressEN}</p>
             </div>
 
         <div className="last-footer">
