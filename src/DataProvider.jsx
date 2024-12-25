@@ -18,22 +18,22 @@ export const DataProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const categoryResponse = await fetch('https://butabakurestaurant.az/api/v1/category');
+        const categoryResponse = await fetch('https://api.butabakurestaurant.az/api/v1/category');
   if (!categoryResponse.ok) console.log('Failed to fetch categories');
   const categoryData = await categoryResponse.json();
   setCategories(categoryData);
 
-  const subcategoryResponse = await fetch('https://butabakurestaurant.az/api/v1/subcategory');
+  const subcategoryResponse = await fetch('https://api.butabakurestaurant.az/api/v1/subcategory');
   if (!subcategoryResponse.ok) console.log('Failed to fetch subcategories');
   const subcategoryData = await subcategoryResponse.json();
   setSubcategories(subcategoryData);
 
-  const productResponse = await fetch('https://butabakurestaurant.az/api/v1/product');
+  const productResponse = await fetch('https://api.butabakurestaurant.az/api/v1/product');
   if (!productResponse.ok) console.log('Failed to fetch products');
   const productData = await productResponse.json();
   setProducts(productData);
 
-  const infoResponse = await fetch('https://butabakurestaurant.az/api/v1/info');
+  const infoResponse = await fetch('https://api.butabakurestaurant.az/api/v1/info');
   if (!infoResponse.ok) console.log('Failed to fetch info');
   const infoData = await infoResponse.json();
   setInfo(infoData);
