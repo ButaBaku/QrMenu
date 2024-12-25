@@ -20,7 +20,8 @@ const App = () => {
     if(localStorage.getItem("lang")){
       setLanguage(localStorage.getItem("lang"));   
     }else{
-      setLanguage(localStorage.setItem("lang" , LANGUAGE.DEFAULT));
+      localStorage.setItem("lang" , LANGUAGE.DEFAULT);
+      setLanguage(LANGUAGE.DEFAULT);
     }
   
   },[])
