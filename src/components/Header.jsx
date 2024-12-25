@@ -77,12 +77,17 @@ const Header = ({ tranferDataFunc }) => {
           {lang == LANGUAGE.AZ ? LANGUAGE.EN : LANGUAGE.AZ}
         </button>
 
+        <div className="custom-box">
+
         <div className="social-parts">
-          <div className="service-pay">
-            <p>{info[`title${lang.toUpperCase()}`]}</p>
-          </div>
           
-          <div className="header-down">
+          <div className="top-part">
+            <div className="service-pay">
+              <p>{info[`title${lang.toUpperCase()}`]}</p>
+            </div>
+          </div>
+
+          <div className="bottom-part">            
             <div className="social-platforms">
             <div className="social-icon">
               <a href={`tel:+${info.phoneNumbers[0]}`} className="fa-icon">
@@ -92,7 +97,7 @@ const Header = ({ tranferDataFunc }) => {
             <div className="social-icon">
               <a
                 href={`https://wa.me/${info.phoneNumbers[0]}`}
-                className="fa-icon fa-icon-whatsapp"
+                className="fa-icon fa-icon-big"
               >
                 <BsWhatsapp />
               </a>
@@ -100,7 +105,7 @@ const Header = ({ tranferDataFunc }) => {
             <div className="social-icon">
               <a
                 href={`${info.instagram}`}
-                className="fa-icon fa-icon-whatsapp"
+                className="fa-icon fa-icon-big"
               >
                 <BsInstagram />
               </a>
@@ -108,7 +113,7 @@ const Header = ({ tranferDataFunc }) => {
             <div className="social-icon">
               <a
                 href={`${info.tiktok}`}
-                className="fa-icon fa-icon-whatsapp"
+                className="fa-icon fa-icon-big"
               >
                 <FaTiktok />
               </a>
@@ -116,14 +121,16 @@ const Header = ({ tranferDataFunc }) => {
             <div className="social-icon">
               <a
                 href={`${info.youtube}`}
-                className="fa-icon fa-icon-whatsapp"
+                className="fa-icon fa-icon-big"
               >
                 <FaYoutube />
               </a>
             </div>
-          </div>
-          <div className="search-box">
-                <input
+            
+        </div>
+
+        <div className="search-box">
+<input
                   type="text"
                   placeholder={lang == LANGUAGE.AZ ? "Axtar" : "Search"}
                   className="search-input"
@@ -139,11 +146,15 @@ const Header = ({ tranferDataFunc }) => {
                 }}>
                   <i className="fas fa-search"></i>
                 </div>
-        </div>
+                
+                </div>
+
         </div>
 
         
           </div>
+
+        </div>
 
       </div>
     </header>
