@@ -15,8 +15,7 @@ const Meals = ({ language, inputValue }) => {
     setInput(inputValue)
   }, [inputValue])
   
-  console.log("input",input);
-    const defineCurrentSubCategories=(thisCategory)=>{
+  const defineCurrentSubCategories=(thisCategory)=>{
         return subcategories.filter((i)=> i.categoryId == thisCategory.id);
     }
 
