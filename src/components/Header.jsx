@@ -64,6 +64,7 @@ const Header = ({ tranferDataFunc }) => {
           {info[`address${lang.toUpperCase()}`].slice(0, 4)}...
         </a>
 
+
         <button
           className="btn lang-btn"
           onClick={() => {
