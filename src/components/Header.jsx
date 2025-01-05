@@ -54,7 +54,7 @@ const Header = ({ tranferDataFunc }) => {
 
         <img className="logo-img" src={logo} alt="" />
         <a
-          href="https://www.google.com/maps/place/40%C2%B024'43.5%22N+49%C2%B057'27.6%22E/@40.4120744,49.955088,17z/data=!3m1!4b1!4m4!3m3!8m2!3d40.4120744!4d49.9576629?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D"
+          href="https://maps.app.goo.gl/kAJatS9EmbgizRVBA"
           className="location-part"
           target="_blank"
           rel="noopener noreferrer"

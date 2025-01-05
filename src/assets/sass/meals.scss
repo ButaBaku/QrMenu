@@ -15,14 +15,14 @@
             min-width: 60px;
             margin: 5px;
             width: 25%;
-            max-width: 100px;
+            max-width: 80px;
             // border: 1px solid var(--text-color-gold);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             font-size: 15px;
-            @media (max-width:500px) {
+            @media (max-width:400px) {
               min-width: 60px;  
-              max-width: 80px;
+              max-width: 70px;
               font-size: 10px;
             }
             .image-box{
